@@ -247,32 +247,16 @@
                 id="ada26a2f-367b-48a0-9f5a-c8ca9b0d8c40" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="ba03aae0-7577-41d5-a732-c788f19826cd" name="Send nominal or safety channel velocities">
+              id="ba03aae0-7577-41d5-a732-c788f19826cd" name="/controlSwitch">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="9038c8b9-7eca-4417-89d8-d61a7541045a" name="FIP 1"/>
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="730aee91-8afe-4c60-8d5e-49b141c8a4a3" name="FIP 2"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="2bea6442-cff9-485a-a74a-36f7b5ddb90c" name="FOP 1"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="e78e9c5f-81be-45ad-bc70-0cd255a123a2" name="FOP 2"/>
-            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="d7a30117-1670-4775-a8d5-44727c98468f" name="FOP 3"/>
+                id="2807a31b-775e-4960-bd9f-8649ffbdddc5" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="c1736567-fbfa-4f18-873a-c184ded4c493" name="Send Steering data to RCVE part">
+              id="c1736567-fbfa-4f18-873a-c184ded4c493" name="Send TwistS data to RCVE part">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="a8bc0899-ea34-4d53-8b28-2dea4f18a285" name="FIP 1"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="f2e8f425-7e76-4f64-99a1-31264051b55d" name="Send throttle data to RCVE Part">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="de70f457-9e0a-4f0a-a329-376ccc063359" name="FIP 1"/>
-          </ownedFunctions>
-          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="e0367213-2ca6-4e32-a3e3-f3e787317968" name="Other interface data to be discovered useful">
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="4fc9097a-da5b-41c9-9f1a-8d3a6cd0d3c4" name="FIP 1"/>
+                id="c0eb478c-1f3e-4691-a8b0-76c5b423beb2" name="FIP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="dd9e6bb0-8949-4d0f-8ed8-218dad73c498" name="Capture images">
@@ -475,15 +459,6 @@
               id="40569648-680f-4a2f-8879-1672bddcb315" name="Desired safe velocities"
               target="#9038c8b9-7eca-4417-89d8-d61a7541045a" source="#ada26a2f-367b-48a0-9f5a-c8ca9b0d8c40"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="239b5ff6-3246-4e81-8cc4-bd909d549bb5" name="Chosen steering data"
-              target="#a8bc0899-ea34-4d53-8b28-2dea4f18a285" source="#2bea6442-cff9-485a-a74a-36f7b5ddb90c"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="c4a05e4f-1248-459f-bd3b-8fa0b9792d1a" name="Chosen throttle data"
-              target="#de70f457-9e0a-4f0a-a329-376ccc063359" source="#e78e9c5f-81be-45ad-bc70-0cd255a123a2"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="a1e86840-7c3b-410f-ac0e-d9ee589411e0" name="Chosen other data" target="#4fc9097a-da5b-41c9-9f1a-8d3a6cd0d3c4"
-              source="#d7a30117-1670-4775-a8d5-44727c98468f"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="c9d5ddee-c7a9-4ed3-a8a2-989372bbe209" name="/camera_1/image_raw"
               target="#b69a83cf-20fb-41c2-8bec-9bb23cabc89c" source="#47a0aaed-cf94-4201-bc7b-e1302326b7b1"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
@@ -525,6 +500,9 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="8905e625-6b4b-48f0-adab-a82b34c5e5f3" name="/camera1/image_tracker/objects"
               target="#482d8559-9987-4e44-a025-890e899b60b5" source="#e4a556c6-7616-4142-ad37-b4d71205a9ec"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="33856eda-d2e4-4ba0-a18e-5435e0ab2ba1" name="/TwistS" target="#c0eb478c-1f3e-4691-a8b0-76c5b423beb2"
+              source="#2807a31b-775e-4960-bd9f-8649ffbdddc5"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
@@ -686,12 +664,6 @@
               id="580fe400-4db1-4c07-b7ff-01f8f85488f8" name="Interface with the RCVE project">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="27a8f98b-de57-4198-a497-e12740342bc0" targetElement="#c1736567-fbfa-4f18-873a-c184ded4c493"
-                sourceElement="#580fe400-4db1-4c07-b7ff-01f8f85488f8"/>
-            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                id="9ea64c74-655e-4204-b6b3-013b8bb1e6e1" targetElement="#f2e8f425-7e76-4f64-99a1-31264051b55d"
-                sourceElement="#580fe400-4db1-4c07-b7ff-01f8f85488f8"/>
-            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
-                id="d6c169e7-adf7-4086-b79a-0dae1d08058f" targetElement="#e0367213-2ca6-4e32-a3e3-f3e787317968"
                 sourceElement="#580fe400-4db1-4c07-b7ff-01f8f85488f8"/>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
