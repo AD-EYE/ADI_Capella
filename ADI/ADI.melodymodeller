@@ -380,28 +380,7 @@
                 id="934b8262-d0d1-41e0-9d06-7f11f02698cd" name="FOP 7"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="fa2952d9-e20d-4998-88b0-e5bbb14f96d8" name="Lidar and radar´s nodes">
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="49a0969a-0521-45f6-abad-66e66dd62ac9" name="/objectsFrameAdapter2">
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="35783dd5-a1a8-48db-9791-f55d9cf6c91f" name="FIP 1"/>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="9c8e0703-b2f9-4246-9585-cf1f33dd86ae" name="FOP 1"/>
-            </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="e0fed52b-a50b-4077-b4e8-a0039ddffcab" name="/radar_broadcaster">
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="b9da3c15-43a1-482a-b8b1-cc4273c3ede1" name="FIP 1"/>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="7c4fa5ca-3336-4cd9-91a0-d7ccd4a7bbc9" name="FOP 1"/>
-            </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="6c3657f4-1795-4af0-b72c-d744c1306c85" name="/objectsListFuse1">
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="05899af8-e874-445c-b472-f6a15a57a7cb" name="FIP 1"/>
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="67ab86ce-dd53-4a4d-9370-eafc20964a61" name="FIP 2"/>
-            </ownedFunctions>
+              id="fa2952d9-e20d-4998-88b0-e5bbb14f96d8" name="Lidar´s nodes">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
                 id="2180f6d2-a94e-4474-aa21-ff3919494040" name="/lidar_euclidean_cluster_detect">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -417,17 +396,35 @@
                   id="475057e5-b782-43e9-a5e9-b6e6a3a5d9f9" name="FOP 1"/>
             </ownedFunctions>
             <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="579be487-fdeb-4a35-b5ce-b61a28003545" name="/detection/radar_tracker/objects"
-                target="#35783dd5-a1a8-48db-9791-f55d9cf6c91f" source="#7c4fa5ca-3336-4cd9-91a0-d7ccd4a7bbc9"/>
-            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="6161c09b-27d9-4b86-aba8-597904613249" name="/detection/radar_tracker/objects2"
-                target="#67ab86ce-dd53-4a4d-9370-eafc20964a61" source="#9c8e0703-b2f9-4246-9585-cf1f33dd86ae"/>
-            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="07683411-2372-4097-ad6d-b7207f9e9f10" name="/detection/lidar_tracker/objects"
-                target="#05899af8-e874-445c-b472-f6a15a57a7cb" source="#ffc62c16-e4b7-4730-a76d-aa229fa708a2"/>
-            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
                 id="9920817b-d949-4cc5-ac40-a97fdd86e7a3" name="/points_raw" target="#a15c17cb-0923-46b1-a045-10b7cef36a08"
                 source="#475057e5-b782-43e9-a5e9-b6e6a3a5d9f9"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="6c3657f4-1795-4af0-b72c-d744c1306c85" name="/objectsListFuse1">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="05899af8-e874-445c-b472-f6a15a57a7cb" name="FIP 1"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="67ab86ce-dd53-4a4d-9370-eafc20964a61" name="FIP 2"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="6a8b7929-6b51-4a9e-a6d1-7bc60f874e6c" name="Radar´s node">
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="e0fed52b-a50b-4077-b4e8-a0039ddffcab" name="/radar_broadcaster">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="b9da3c15-43a1-482a-b8b1-cc4273c3ede1" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="7c4fa5ca-3336-4cd9-91a0-d7ccd4a7bbc9" name="FOP 1"/>
+            </ownedFunctions>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="49a0969a-0521-45f6-abad-66e66dd62ac9" name="/objectsFrameAdapter2">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="35783dd5-a1a8-48db-9791-f55d9cf6c91f" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="9c8e0703-b2f9-4246-9585-cf1f33dd86ae" name="FOP 1"/>
+            </ownedFunctions>
+            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+                id="579be487-fdeb-4a35-b5ce-b61a28003545" name="/detection/radar_tracker/objects"
+                target="#35783dd5-a1a8-48db-9791-f55d9cf6c91f" source="#7c4fa5ca-3336-4cd9-91a0-d7ccd4a7bbc9"/>
           </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="f3f877c6-6b9a-4593-9bae-f819bb65cf93" targetElement="#1448cb90-ea94-49fc-b317-8c94e41038f8"
@@ -480,6 +477,12 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="fe828298-706e-49b6-871d-93a573a0bf0a" name="/radarDetections" target="#b9da3c15-43a1-482a-b8b1-cc4273c3ede1"
               source="#014e5c2a-dbfe-4e18-bd31-83d4aec99e3e"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="07683411-2372-4097-ad6d-b7207f9e9f10" name="/detection/lidar_tracker/objects"
+              target="#05899af8-e874-445c-b472-f6a15a57a7cb" source="#ffc62c16-e4b7-4730-a76d-aa229fa708a2"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="6161c09b-27d9-4b86-aba8-597904613249" name="/detection/radar_tracker/objects2"
+              target="#67ab86ce-dd53-4a4d-9370-eafc20964a61" source="#9c8e0703-b2f9-4246-9585-cf1f33dd86ae"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
