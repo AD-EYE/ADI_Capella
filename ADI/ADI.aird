@@ -28,7 +28,7 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_xrWykKmREeqD2cP6AxY77g">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__wxb0amWEeqKjNHFXkUoIg" name="[LAB] Logical System ADI" repPath="#__wiyUKmWEeqKjNHFXkUoIg" changeId="df9c432f-fba5-4402-94f6-44644b337e8a">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__wxb0amWEeqKjNHFXkUoIg" name="[LAB] Logical System ADI" repPath="#__wiyUKmWEeqKjNHFXkUoIg" changeId="779549f4-a2a0-4671-b0fa-3ce2fb7aa936">
         <eAnnotations xmi:type="description:DAnnotation" uid="__xo-gKmWEeqKjNHFXkUoIg" source="https://www.polarsys.org/capella/dannotation/DesactivatedFilters">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KNmzYLF0EeqwTJeRypq1zg" key="hide.computed.component.exchanges.filter" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KNmzYbF0EeqwTJeRypq1zg" key="hide.computed.physical.links.filter" value="true"/>
@@ -40,7 +40,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Component%20Breakdown']"/>
         <target xmi:type="org.polarsys.capella.core.data.la:LogicalComponent" href="ADI.melodymodeller#e4a6e75e-9ff9-4c8f-a594-8bab705ab472"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_KbSTk7YVEeqEFuHE52k_pQ" name="[LAB] Cameras' Logical Architecture" repPath="#_KbOpMLYVEeqEFuHE52k_pQ" changeId="93c8d9a9-ac6d-4bc8-af94-b0f3fbedd8da">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_KbSTk7YVEeqEFuHE52k_pQ" name="[LAB] Cameras' Logical Architecture" repPath="#_KbOpMLYVEeqEFuHE52k_pQ" changeId="d38a0d1b-04ea-4c72-8b1e-5c13accc5ade">
         <eAnnotations xmi:type="description:DAnnotation" uid="_Kbyp4bYVEeqEFuHE52k_pQ" source="https://www.polarsys.org/capella/dannotation/DesactivatedFilters">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Kbyp4rYVEeqEFuHE52k_pQ" key="hide.computed.component.exchanges.filter" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Kbyp47YVEeqEFuHE52k_pQ" key="hide.computed.physical.links.filter" value="true"/>
@@ -52,7 +52,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Function%20Breakdown']"/>
         <target xmi:type="org.polarsys.capella.core.data.la:LogicalFunction" href="ADI.melodymodeller#b689b92e-b48b-409a-89da-98ac01dacbc7"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_FE7y4MXMEeqdgqWwcqafzg" name="[LAB] Lidar and Radar Logical Architecture" repPath="#_FE2TUcXMEeqdgqWwcqafzg" changeId="7fc5d3cc-73dd-48b3-9f94-d74b23d86183">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_FE7y4MXMEeqdgqWwcqafzg" name="[LAB] Lidar and Radar Logical Architecture" repPath="#_FE2TUcXMEeqdgqWwcqafzg" changeId="030170e4-0d7c-4f00-b035-74d05f22774c">
         <eAnnotations xmi:type="description:DAnnotation" uid="_FE2TUMXMEeqdgqWwcqafzg" source="https://www.polarsys.org/capella/dannotation/DesactivatedFilters">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FE-PIMXMEeqdgqWwcqafzg" key="hide.computed.component.exchanges.filter" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FE-PIcXMEeqdgqWwcqafzg" key="hide.computed.physical.links.filter" value="true"/>
@@ -312,7 +312,7 @@
                           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dw4ukqmZEeqKjNHFXkUoIg"/>
                         </children>
                         <styles xmi:type="notation:ShapeStyle" xmi:id="_dw4HgamZEeqKjNHFXkUoIg" fontName="Segoe UI" fontHeight="8"/>
-                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dw4HgqmZEeqKjNHFXkUoIg" x="-2" width="10" height="10"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dw4HgqmZEeqKjNHFXkUoIg" x="-2" y="70" width="10" height="10"/>
                       </children>
                       <children xmi:type="notation:Node" xmi:id="_eRikkKmZEeqKjNHFXkUoIg" type="3001" element="_eRVwQKmZEeqKjNHFXkUoIg">
                         <children xmi:type="notation:Node" xmi:id="_eRikk6mZEeqKjNHFXkUoIg" visible="false" type="5001">
@@ -6010,7 +6010,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@edgeMappings[name='LAB%20PortRealization%20FlowPort%20to%20ComponentPort']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ysN5aLYYEeqEFuHE52k_pQ" name="/camera1/vision_ssd_detect" sourceNode="_ysN5YLYYEeqEFuHE52k_pQ" targetNode="_ysN5ZLYYEeqEFuHE52k_pQ">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ysN5aLYYEeqEFuHE52k_pQ" name="/camera1/image_detector/objects" sourceNode="_ysN5YLYYEeqEFuHE52k_pQ" targetNode="_ysN5ZLYYEeqEFuHE52k_pQ">
       <target xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="ADI.melodymodeller#4a357d20-37ed-4003-92f5-32de1426d3b2"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="ADI.melodymodeller#4a357d20-37ed-4003-92f5-32de1426d3b2"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ysN5abYYEeqEFuHE52k_pQ" targetArrow="NoDecoration" centered="Both" strokeColor="9,92,46">
@@ -6019,7 +6019,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@edgeMappings[name='LAB%20DataFlow%20between%20Function']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_3UY-YbYYEeqEFuHE52k_pQ" name="/camera2/vision_ssd_detect" sourceNode="_3UYXULYYEeqEFuHE52k_pQ" targetNode="_3UYXVLYYEeqEFuHE52k_pQ">
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_3UY-YbYYEeqEFuHE52k_pQ" name="/camera2/image_detector/objects" sourceNode="_3UYXULYYEeqEFuHE52k_pQ" targetNode="_3UYXVLYYEeqEFuHE52k_pQ">
       <target xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="ADI.melodymodeller#9585ba2f-8b74-4f80-ba6e-42ce7e7af652"/>
       <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionalExchange" href="ADI.melodymodeller#9585ba2f-8b74-4f80-ba6e-42ce7e7af652"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_3UY-YrYYEeqEFuHE52k_pQ" targetArrow="NoDecoration" centered="Both" strokeColor="9,92,46">
@@ -7701,7 +7701,7 @@
                           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qoWeB8XZEeqdgqWwcqafzg"/>
                         </children>
                         <styles xmi:type="notation:ShapeStyle" xmi:id="_qoWeAcXZEeqdgqWwcqafzg" fontName="Segoe UI" fontHeight="8"/>
-                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qoWeAsXZEeqdgqWwcqafzg" x="-2" y="40" width="10" height="10"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qoWeAsXZEeqdgqWwcqafzg" x="201" y="50" width="10" height="10"/>
                       </children>
                       <styles xmi:type="notation:ShapeStyle" xmi:id="_A7DFAcXPEeqdgqWwcqafzg" fontColor="3038217" fontName="Segoe UI" fontHeight="12"/>
                       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A7DFAsXPEeqdgqWwcqafzg" x="645" y="284" width="209" height="128"/>
@@ -8825,6 +8825,9 @@
               <target xmi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort" href="ADI.melodymodeller#285bfd49-215f-4ca2-9746-eeb212d659e7"/>
               <semanticElements xmi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort" href="ADI.melodymodeller#285bfd49-215f-4ca2-9746-eeb212d659e7"/>
               <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_qoNUIcXZEeqdgqWwcqafzg"/>
+              <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+              <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+              <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
               <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_qoNUH8XZEeqdgqWwcqafzg" showIcon="false" hideLabelByDefault="true" workspacePath="/org.polarsys.capella.core.sirius.analysis/description/images/FunctionOutputPort.png">
                 <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']/@ownedRepresentations[name='Logical%20Architecture%20Blank']/@defaultLayer/@containerMappings[name='LAB%20Logical%20Component']/@subNodeMappings[name='LAB%20Logical%20Function']/@borderedNodeMappings[name='LAB%20Flow%20Port%20on%20Logical%20Function']/@conditionnalStyles.0/@style"/>
               </ownedStyle>

@@ -325,10 +325,10 @@
                   id="6f65899e-f207-41de-942e-1aebfbd6b1d0" name="FIP 1"/>
             </ownedFunctions>
             <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="9585ba2f-8b74-4f80-ba6e-42ce7e7af652" name="/camera2/vision_ssd_detect"
+                id="9585ba2f-8b74-4f80-ba6e-42ce7e7af652" name="/camera2/image_detector/objects"
                 target="#76018683-df7a-488d-bd72-09eb40d1d88f" source="#e1fa6225-488f-4b22-817b-272f0c5d6d59"/>
             <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="4a357d20-37ed-4003-92f5-32de1426d3b2" name="/camera1/vision_ssd_detect"
+                id="4a357d20-37ed-4003-92f5-32de1426d3b2" name="/camera1/image_detector/objects"
                 target="#7151cbb0-e570-40b2-bc2d-a01900e353e0" source="#5181f95e-3051-4922-902a-9ce8eb1658c6"/>
             <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
                 id="5c443e7a-1082-46bd-bdb9-2983a92dab59" name="/camera_light_color"
