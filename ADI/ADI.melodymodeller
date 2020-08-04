@@ -235,7 +235,7 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="b1744bb0-3a88-462e-a7ed-8d2ce64b2d27" name="Enter desired goal">
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="ff401f68-f6f9-49a7-a46f-d389e0f4763c" name="FOP 1"/>
+                id="b56c3758-cf29-4f79-837a-45f62a4df475" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="ba03aae0-7577-41d5-a732-c788f19826cd" name="/controlSwitch">
@@ -505,6 +505,8 @@
                   id="ec00a0ee-6d5c-4ddf-a295-670a281a19bc" name="FIP 9"/>
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="bc8ad978-ff4d-4933-991c-822330aacfa0" name="FIP 10"/>
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="c27f2e04-90e4-4266-be43-c928cb91d92d" name="FIP 11"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="06965233-48f2-4ada-b301-1045966f4cba" name="FOP 1"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
@@ -732,8 +734,15 @@
               id="d35bcdb4-649f-4c03-aa47-431f8bc1467a" name="/SafetySupervisor">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="edc8a906-9305-4e7f-9cb9-046d596aebee" name="FIP 1"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="da63486b-cbf5-41d7-a3a5-2e416f80db5e" name="FIP 2"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="5dd18782-dc67-487e-99dc-3d506b7c4def" name="FOP 1"/>
+          </ownedFunctions>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="1d6a5571-f1e0-4786-94dd-58e412b22164" name="Robust Position">
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="a4eb975d-cb03-4187-ba0d-d826b5f27fbf" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="f3f877c6-6b9a-4593-9bae-f819bb65cf93" targetElement="#1448cb90-ea94-49fc-b317-8c94e41038f8"
@@ -900,6 +909,12 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="8a7f8818-49a6-4e62-8a0a-345b505664f0" name="/switchCommand" target="#30b73c3d-8b8b-41c5-9ea7-09bd36535bb7"
               source="#5dd18782-dc67-487e-99dc-3d506b7c4def"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="db477ceb-47ae-4e08-8e3a-76cfef66e859" name="/gnss_pose" target="#da63486b-cbf5-41d7-a3a5-2e416f80db5e"
+              source="#a4eb975d-cb03-4187-ba0d-d826b5f27fbf"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="33a3a7ff-d62f-41c0-8038-215492465fb5" name="/move_base_simple/goal"
+              target="#c27f2e04-90e4-4266-be43-c928cb91d92d" source="#b56c3758-cf29-4f79-837a-45f62a4df475"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
@@ -1504,6 +1519,9 @@
                 sourceElement="#d6648006-9a8f-4599-979b-bb41c5f3498f"/>
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="0344aa11-4b83-4b04-af0b-545c78236de0" targetElement="#636b7f23-177a-413c-a1d3-6511c22a9012"
+                sourceElement="#d6648006-9a8f-4599-979b-bb41c5f3498f"/>
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="87f244e0-6a23-4c8c-91ab-1cf0ce7310ac" targetElement="#1d6a5571-f1e0-4786-94dd-58e412b22164"
                 sourceElement="#d6648006-9a8f-4599-979b-bb41c5f3498f"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="10ed2142-4d64-4f09-aec8-18a1da5c585d" name="CP 1" orientation="OUT"
