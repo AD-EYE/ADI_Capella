@@ -885,7 +885,7 @@
               id="33856eda-d2e4-4ba0-a18e-5435e0ab2ba1" name="/TwistS" target="#c0eb478c-1f3e-4691-a8b0-76c5b423beb2"
               source="#2807a31b-775e-4960-bd9f-8649ffbdddc5"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="7ebeda40-a112-46ca-9514-c53dcefe062b" name="GPS clocks" target="#57f2d9ef-8b47-4ca7-99b6-57d5a261e65c"
+              id="7ebeda40-a112-46ca-9514-c53dcefe062b" name="Sensor position" target="#57f2d9ef-8b47-4ca7-99b6-57d5a261e65c"
               source="#1ef5af91-ce30-4a57-9b36-5fe2ddd75ad7"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="e64668ce-762a-40dd-82cf-be470488a724" name="Movement" target="#e0a9b1ea-4bcc-433f-9cbe-eadc280eb6d3"
@@ -1074,21 +1074,32 @@
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="60fa3c4e-6c8c-4f26-bf71-e759487ebe79"
             name="Satellites" abstractType="#282a3bd2-377c-4d1e-9bc7-b995d5d92d74"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-            id="412d5e47-4e01-474a-b515-0ad2c1feaf0c" name="Visible light" source="#29460481-b3df-48e1-9fd9-e3d90b71cc6c"
+            id="412d5e47-4e01-474a-b515-0ad2c1feaf0c" name="Cameras' FOV" source="#29460481-b3df-48e1-9fd9-e3d90b71cc6c"
             target="#1dd1a0f8-0440-4624-b19d-49beb530c3d4" kind="FLOW"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-            id="491e4d9c-0e0c-4907-a3ce-01abeeec763f" name="Infrared light" source="#bbc3312f-6daa-44b3-8ce6-cbb1dae5e343"
-            target="#107d1067-5f0a-4704-8b73-b4cddd991f3c" kind="FLOW"/>
+            id="491e4d9c-0e0c-4907-a3ce-01abeeec763f" name="Object distance/intensity"
+            source="#bbc3312f-6daa-44b3-8ce6-cbb1dae5e343" target="#107d1067-5f0a-4704-8b73-b4cddd991f3c"
+            kind="FLOW"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-            id="73b7fd98-0fe4-4ffa-9482-a405afb64849" name="Any wavelenght" source="#576eab64-216f-4f01-bd70-fc41aebd3437"
+            id="73b7fd98-0fe4-4ffa-9482-a405afb64849" name="Object distance" source="#576eab64-216f-4f01-bd70-fc41aebd3437"
             target="#5c607966-0785-4b52-be6b-df87a3331214" kind="FLOW"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-            id="a377076b-0f6f-491e-958e-95f54b44e42e" name="Microwaves" source="#b04e455a-9510-4c24-8f61-55d839b48da7"
-            target="#d603f123-cfee-4602-84ac-1e1d5d4e34e3" kind="FLOW"/>
-        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-            id="c11a6c19-21a9-4ce4-bf05-85980572aa3d" name="Physical action (command)"
-            source="#106899a8-ff4a-4ca5-93fe-63e5f1345172" target="#b6d7f764-1c3c-48fe-923e-39305c22af0d"
+            id="a377076b-0f6f-491e-958e-95f54b44e42e" name="Clocks and satellites position"
+            source="#b04e455a-9510-4c24-8f61-55d839b48da7" target="#d603f123-cfee-4602-84ac-1e1d5d4e34e3"
             kind="FLOW"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="c11a6c19-21a9-4ce4-bf05-85980572aa3d" name="Driver intention" source="#106899a8-ff4a-4ca5-93fe-63e5f1345172"
+            target="#b6d7f764-1c3c-48fe-923e-39305c22af0d" kind="FLOW"/>
+        <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+            id="29f277f6-c87b-4ae8-a3cd-aa88c3471bc2" name="Infrared light" linkEnds="#74094414-bfff-40d2-9021-179f6b8a147c #a96dcd7c-0acb-4b85-83bc-caa7c23e9aa7"/>
+        <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+            id="2703e347-e4cd-4292-889f-5d2787d29ed1" name="Visible light" linkEnds="#2da7c69c-8c20-47a7-bff1-c78846b071d7 #417e430f-7454-438a-82b6-d2afa076a3c3"/>
+        <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+            id="66985095-5eaa-46a1-a630-fc6c4316369d" name="Any wavelenght" linkEnds="#57c723d7-4863-417f-83b0-71b74103a8c9 #ec10ea1f-fb03-4d66-83af-f7458119034e"/>
+        <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+            id="2ddbf56c-65f6-467c-92be-c06a6331743e" name="Microwaves" linkEnds="#13581704-ae72-465a-a1e2-910bcff6377e #60b2f702-07fe-44cf-a8f0-5a12c6fd8c17"/>
+        <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
+            id="e2149f7b-70d2-473e-a18d-41453e7094f2" name="HMI" linkEnds="#9afe3de3-4d97-4bc0-a185-29599240059e #590499c0-076b-40c1-9bdb-266b770acbcf"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="e4a6e75e-9ff9-4c8f-a594-8bab705ab472" name="ADI">
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
@@ -1111,19 +1122,18 @@
               source="#10ed2142-4d64-4f09-aec8-18a1da5c585d" target="#f844e3f4-1cd5-4c18-8c27-59ba8d1d54dc"
               kind="FLOW"/>
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-              id="0ab299c3-71c0-47d0-b8fd-6547bba889b6" name="Link ControlSwitch/RCVE"
-              source="#767626c9-3b46-41bf-9216-f3b5ea006446" target="#531e05ef-5e26-4834-b734-a14fcc97c7bf"
-              kind="FLOW"/>
+              id="0ab299c3-71c0-47d0-b8fd-6547bba889b6" name="Selected command" source="#767626c9-3b46-41bf-9216-f3b5ea006446"
+              target="#531e05ef-5e26-4834-b734-a14fcc97c7bf" kind="FLOW"/>
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-              id="dc9ce98d-9322-4fe3-9019-444bce48bcad" name="Link RCVE/Sensors" source="#fcde9920-e61e-4ca4-bbd6-b1efd42bc792"
-              target="#d058a697-2b2b-4aeb-9422-f93dc10b3b74" kind="FLOW"/>
+              id="dc9ce98d-9322-4fe3-9019-444bce48bcad" name="Movement of wheels"
+              source="#fcde9920-e61e-4ca4-bbd6-b1efd42bc792" target="#d058a697-2b2b-4aeb-9422-f93dc10b3b74"
+              kind="FLOW"/>
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
               id="63498640-05c1-4faa-835c-bb123b8b8dda" name="D 9" source="#b6d7f764-1c3c-48fe-923e-39305c22af0d"
               target="#801e464a-f235-4e39-a70f-33ccae495a45" kind="DELEGATION"/>
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-              id="46a436b6-689f-4c1d-9d7c-32fc8604a1f2" name="ADI Interface/Software"
-              source="#d1adb4c4-048c-414a-8d1d-2960249e0679" target="#f7009727-2962-4409-add5-203078dc0f57"
-              kind="FLOW"/>
+              id="46a436b6-689f-4c1d-9d7c-32fc8604a1f2" name="Driver Input" source="#d1adb4c4-048c-414a-8d1d-2960249e0679"
+              target="#f7009727-2962-4409-add5-203078dc0f57" kind="FLOW"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="970d918b-d9dd-48dc-90e0-d191ee7fa045"
               name="Software" abstractType="#e2351334-f2f7-4646-afcf-5c2e44f79a62"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="7d156a8b-88e1-44ed-be7e-9c5989de6ea5"
@@ -1149,6 +1159,16 @@
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
               id="b6d7f764-1c3c-48fe-923e-39305c22af0d" name="CP 10" orientation="IN"
               kind="FLOW"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="a96dcd7c-0acb-4b85-83bc-caa7c23e9aa7" name="PP 11"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="417e430f-7454-438a-82b6-d2afa076a3c3" name="PP 12"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="ec10ea1f-fb03-4d66-83af-f7458119034e" name="PP 13"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="60b2f702-07fe-44cf-a8f0-5a12c6fd8c17" name="PP 14"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="590499c0-076b-40c1-9bdb-266b770acbcf" name="PP 15"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="76353d0a-cb00-47db-aa4e-92756fd454e9" targetElement="#c393ac30-1b10-4b91-b7f0-22ffa62ecd83"
               sourceElement="#e4a6e75e-9ff9-4c8f-a594-8bab705ab472"/>
@@ -1158,29 +1178,29 @@
                 id="b426a55b-6a84-44d9-802f-805c1050ac17" name="D 1" source="#4d8ba926-3caa-4266-ad9f-cccdcbfce282"
                 target="#eb9fbd34-308f-45ea-85c7-56677febdce1" kind="DELEGATION"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="e142de20-569b-4d35-88d9-03e9255a3c63" name="Access to memory"
+                id="e142de20-569b-4d35-88d9-03e9255a3c63" name="Data stored in memory"
                 source="#c6b5d641-89d3-4e1f-98fd-e304c1ce147d" target="#d95d28b8-eb45-41a9-a4df-454a4e2a014b"
                 kind="FLOW"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
                 id="11be2557-fc3c-4311-bbab-8a2949976960" name="D 3" source="#f844e3f4-1cd5-4c18-8c27-59ba8d1d54dc"
                 target="#e1fc620c-d5f5-4849-99b6-522fcbe741c5" kind="DELEGATION"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="99633718-68a2-4039-8061-2a3341288154" name="Link Autoware/ControlSwitch"
+                id="99633718-68a2-4039-8061-2a3341288154" name="Autoware's command"
                 source="#fb8034e3-33d5-4e23-b329-d747dca42730" target="#16992fa9-e291-43df-91b0-9c4dc97aa5e9"
                 kind="FLOW"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="9bece0dd-ff1f-4564-8451-9371b55beb13" name="Link SafetyChannel/ControlSwitch"
+                id="9bece0dd-ff1f-4564-8451-9371b55beb13" name="SafetyChannel's command"
                 source="#32233c4a-318b-4467-89c7-cbf0160ebf55" target="#6f351485-f47b-4f38-a626-d115b36e75ff"
                 kind="FLOW"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="efb9bc05-cd15-4168-9eab-254ba37eb592" name="Link ControlSwitch/SafetyChannel"
+                id="efb9bc05-cd15-4168-9eab-254ba37eb592" name="Control Switch feedback"
                 source="#79e1fdda-d9e1-43c5-9e5f-446f90e368e5" target="#08a845a9-6888-4308-bf47-c658341567c7"
                 kind="FLOW"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
                 id="59839706-9384-49e3-af50-0bf3bb2d2412" name="D 7" source="#767626c9-3b46-41bf-9216-f3b5ea006446"
                 target="#9ac46935-e2f8-489a-be83-60ec87e08b34" kind="DELEGATION"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="33ae5aa5-2fa9-447d-9042-03016f2c2ff6" name="Link SafetyChannel/AUTOWARE"
+                id="33ae5aa5-2fa9-447d-9042-03016f2c2ff6" name="Prioritized orders from SafetySupervisor"
                 source="#8372e13d-e61d-4b04-ab86-cdde786dfb97" target="#8d645f77-085f-4030-aa71-c73e55a3d702"
                 kind="FLOW"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
@@ -2038,6 +2058,8 @@
                 id="f40585e8-9c49-4d37-b29b-137396f0cd48" targetElement="#d2af13db-41d2-4b0f-9b6a-b95cd96a8dc8"
                 sourceElement="#106899a8-ff4a-4ca5-93fe-63e5f1345172"/>
           </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="9afe3de3-4d97-4bc0-a185-29599240059e" name="PP 2"/>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="bc856d6d-9c36-4358-bd82-7796bfbe4d5a" name="Outer world" actor="true">
@@ -2071,6 +2093,12 @@
                 id="f5b6aed7-7580-4918-9366-2a0245dce068" targetElement="#975d1400-459e-42db-a737-2550581fdb45"
                 sourceElement="#576eab64-216f-4f01-bd70-fc41aebd3437"/>
           </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="74094414-bfff-40d2-9021-179f6b8a147c" name="PP 4"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="2da7c69c-8c20-47a7-bff1-c78846b071d7" name="PP 5"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="57c723d7-4863-417f-83b0-71b74103a8c9" name="PP 6"/>
         </ownedLogicalComponents>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="282a3bd2-377c-4d1e-9bc7-b995d5d92d74" name="Satellites" actor="true">
@@ -2084,6 +2112,8 @@
                 id="852959c1-f901-45a0-8bb0-9968a1e18544" targetElement="#1ef5af91-ce30-4a57-9b36-5fe2ddd75ad7"
                 sourceElement="#b04e455a-9510-4c24-8f61-55d839b48da7"/>
           </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
+              id="13581704-ae72-465a-a1e2-910bcff6377e" name="PP 2"/>
         </ownedLogicalComponents>
       </ownedLogicalComponentPkg>
       <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
