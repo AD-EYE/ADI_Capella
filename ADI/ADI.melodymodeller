@@ -294,28 +294,13 @@
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
                 id="71914385-0c9d-4140-b521-061599e30347" name="Computing robust /gnss_pose and /pose_otherCar from reliable sensors">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="3d3c805a-f4c0-458e-a6e2-140fa047ee48" name="FIP 1"/>
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="5b97943e-fc3c-43ff-aa84-3ff1a735b0ab" name="FIP 2"/>
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="036b6a25-8d6a-4dda-b8c9-b7966d4184c0" name="FIP 3"/>
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="6f92f4b0-653f-4d2e-ac0b-493ac8374938" name="FIP 4"/>
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                   id="3a657b24-a658-4f6d-aef5-11a1d47262d8" name="FIP 5"/>
-              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                  id="b15d9c8a-10e6-4b53-a026-4ecb47fcf2be" name="FIP 6"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="a4eb975d-cb03-4187-ba0d-d826b5f27fbf" name="FOP 1"/>
-              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                  id="1d7a5d3c-8dd5-43c9-be12-0e91e8755d7e" name="FOP 1"/>
             </ownedFunctions>
             <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
                 id="5a3fb02d-9f68-49ec-ae9d-b3edc03a8712" name="/SafetyPlannerGridmap"
                 target="#39b7b9fc-42a4-4606-ac0f-1f9555d5da72" source="#a6b38a2b-4bb6-4b68-8ad1-7ccdff978fcd"/>
-            <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-                id="de5e9feb-50a9-4330-95e7-8d998e11953b" name="/pose_otherCar" target="#ec819672-2ae9-4076-801f-aca1354f798d"
-                source="#1d7a5d3c-8dd5-43c9-be12-0e91e8755d7e"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="d35bcdb4-649f-4c03-aa47-431f8bc1467a" name="/SafetySupervisor">
@@ -831,6 +816,13 @@
                 <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                     id="0e9f6dcf-50cc-4fb8-80d2-3c75feb4321f" name="FOP 1"/>
               </ownedFunctions>
+              <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                  id="e9e4d6f8-1388-4fab-8b2d-6cc4c9def110" name="Processing reliable lidar information">
+                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                    id="1ee67541-fad9-4e38-b88f-60bdb7a17d4d" name="FIP 1"/>
+                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                    id="78b37971-ddd7-45d0-a692-ac7c64929776" name="FOP 1"/>
+              </ownedFunctions>
             </ownedFunctions>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
@@ -937,6 +929,55 @@
                 <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                     id="0dcc8fbc-bd20-4e93-bbde-647b67c3ebb5" name="FIP 1"/>
               </ownedFunctions>
+              <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                  id="50383d02-8d13-4a0e-8646-8f52944a06c2" name="ROS RELIABLE SENDERS">
+                <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                    id="2f462dd3-f0c0-4a4a-9a1b-f9860fc09f01" name="ROS send reliable lidar">
+                  <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                      id="fc2baefd-3660-438c-b28b-a5fad67d251c" name="FIP 1"/>
+                  <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                      id="50cd480e-67ea-4720-8dec-c7ba5a520793" name="FOP 1"/>
+                </ownedFunctions>
+                <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                    id="b372a91f-6c12-4ee0-8a67-e52c6f69dab2" name="ROS send reliable IMU">
+                  <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                      id="7a7c9556-5e97-42b6-b738-8b6fde0fe2a3" name="FIP 1"/>
+                  <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                      id="2ca4dd4d-0400-43f0-930a-e95232c675ef" name="FOP 1"/>
+                </ownedFunctions>
+                <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                    id="783ac93e-952d-448b-add5-53e1918b2963" name="ROS send reliable radar">
+                  <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                      id="040ddc9a-7f90-4755-bf05-dc62a4906cdd" name="FIP 1"/>
+                  <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                      id="ecbbb8b3-e1d3-49d8-a87d-6d2d073e5ea2" name="FOP 1"/>
+                </ownedFunctions>
+                <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                    id="fd7064ec-8527-4fe4-ace1-fab834579606" name="ROS send reliable odometer">
+                  <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                      id="0dc31954-e07a-4c72-b91b-abfdeec13bba" name="FIP 1"/>
+                  <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                      id="08646412-e96d-466a-ac04-0a230c78f850" name="FOP 1"/>
+                  <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                      id="d94e524f-5581-425f-a5ba-7e0655156c99" name="FOP 3"/>
+                  <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                      id="24ac46e5-6501-48d9-9759-9b3c5e2d62b6" name="FOP 2"/>
+                </ownedFunctions>
+                <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                    id="7fcc8e32-82f9-4b33-8b5e-3398512e66d8" name="ROS send reliable camera">
+                  <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                      id="cefcfd28-b066-492f-9c02-8ec29a2c05b3" name="FIP 1"/>
+                  <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                      id="550703f6-fc2b-46e8-9cd9-896ab0fd6539" name="FOP 1"/>
+                </ownedFunctions>
+                <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                    id="1e86189f-761b-43c5-835d-acadd0289be2" name="ROS send reliable GPS">
+                  <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                      id="b6f7c61d-8395-49d0-a928-380121e80ee2" name="FIP 1"/>
+                  <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                      id="577a627b-c93b-43e9-8d0e-420967c24adc" name="FOP 1"/>
+                </ownedFunctions>
+              </ownedFunctions>
             </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
                 id="d8d0322c-11a5-4d9a-88e1-aa6fb026fcb4" name="/point_cloud_receiver">
@@ -959,57 +1000,6 @@
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="7c4fa5ca-3336-4cd9-91a0-d7ccd4a7bbc9" name="FOP 1"/>
             </ownedFunctions>
-            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="50383d02-8d13-4a0e-8646-8f52944a06c2" name="ROS RELIABLE SENDERS">
-              <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                  id="2f462dd3-f0c0-4a4a-9a1b-f9860fc09f01" name="ROS send reliable lidar">
-                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                    id="fc2baefd-3660-438c-b28b-a5fad67d251c" name="FIP 1"/>
-                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                    id="50cd480e-67ea-4720-8dec-c7ba5a520793" name="FOP 1"/>
-              </ownedFunctions>
-              <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                  id="b372a91f-6c12-4ee0-8a67-e52c6f69dab2" name="ROS send reliable IMU">
-                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                    id="7a7c9556-5e97-42b6-b738-8b6fde0fe2a3" name="FIP 1"/>
-                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                    id="2ca4dd4d-0400-43f0-930a-e95232c675ef" name="FOP 1"/>
-              </ownedFunctions>
-              <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                  id="783ac93e-952d-448b-add5-53e1918b2963" name="ROS send reliable radar">
-                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                    id="040ddc9a-7f90-4755-bf05-dc62a4906cdd" name="FIP 1"/>
-                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                    id="ecbbb8b3-e1d3-49d8-a87d-6d2d073e5ea2" name="FOP 1"/>
-              </ownedFunctions>
-              <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                  id="fd7064ec-8527-4fe4-ace1-fab834579606" name="ROS send reliable odometer">
-                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                    id="0dc31954-e07a-4c72-b91b-abfdeec13bba" name="FIP 1"/>
-                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                    id="87321578-da22-4f80-9b86-8a6a5c6f6e9d" name="FOP 1"/>
-                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                    id="08646412-e96d-466a-ac04-0a230c78f850" name="FOP 1"/>
-                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                    id="d94e524f-5581-425f-a5ba-7e0655156c99" name="FOP 3"/>
-                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                    id="24ac46e5-6501-48d9-9759-9b3c5e2d62b6" name="FOP 2"/>
-              </ownedFunctions>
-              <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                  id="7fcc8e32-82f9-4b33-8b5e-3398512e66d8" name="ROS send reliable camera">
-                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                    id="cefcfd28-b066-492f-9c02-8ec29a2c05b3" name="FIP 1"/>
-                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                    id="550703f6-fc2b-46e8-9cd9-896ab0fd6539" name="FOP 1"/>
-              </ownedFunctions>
-              <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                  id="1e86189f-761b-43c5-835d-acadd0289be2" name="ROS send reliable GPS">
-                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                    id="b6f7c61d-8395-49d0-a928-380121e80ee2" name="FIP 1"/>
-                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                    id="577a627b-c93b-43e9-8d0e-420967c24adc" name="FOP 1"/>
-              </ownedFunctions>
-            </ownedFunctions>
             <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
                 id="628caf17-b8de-4d6c-819c-614b435bc3ce" name="/points_raw_float32"
                 target="#c712d967-62ad-4795-a637-077fc286d19b" source="#d5ced5d3-8d49-4fec-9e46-eb1ad6960730"/>
@@ -1021,11 +1011,17 @@
                 target="#b9da3c15-43a1-482a-b8b1-cc4273c3ede1" source="#014e5c2a-dbfe-4e18-bd31-83d4aec99e3e"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="e9e4d6f8-1388-4fab-8b2d-6cc4c9def110" name="Processing reliable lidar information">
+              id="dd25906e-c972-4ef3-8caa-5c93578fc31f" name="Computing robust /pose_otherCar from, reliable sensors">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="1ee67541-fad9-4e38-b88f-60bdb7a17d4d" name="FIP 1"/>
+                id="6f92f4b0-653f-4d2e-ac0b-493ac8374938" name="FIP 4"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="036b6a25-8d6a-4dda-b8c9-b7966d4184c0" name="FIP 3"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="5b97943e-fc3c-43ff-aa84-3ff1a735b0ab" name="FIP 2"/>
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="3d3c805a-f4c0-458e-a6e2-140fa047ee48" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="78b37971-ddd7-45d0-a692-ac7c64929776" name="FOP 1"/>
+                id="1d7a5d3c-8dd5-43c9-be12-0e91e8755d7e" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="f3f877c6-6b9a-4593-9bae-f819bb65cf93" targetElement="#1448cb90-ea94-49fc-b317-8c94e41038f8"
@@ -1271,8 +1267,8 @@
               id="9c151b36-ca52-4aa6-b5c8-259bab7f50ad" name="Digital reliable odometry data"
               target="#0dc31954-e07a-4c72-b91b-abfdeec13bba" source="#0e9f6dcf-50cc-4fb8-80d2-3c75feb4321f"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="dfdbfb0a-2467-4d2d-a0e6-5c8d7c8636b2" name="Movement" target="#3231c443-8186-4203-a59a-d4ca52b9a3e5"
-              source="#bd01b0b4-5a51-4d3f-bd4b-cd7e688b3678"/>
+              id="dfdbfb0a-2467-4d2d-a0e6-5c8d7c8636b2" name="Movement caught by reliable odometer"
+              target="#3231c443-8186-4203-a59a-d4ca52b9a3e5" source="#bd01b0b4-5a51-4d3f-bd4b-cd7e688b3678"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="81a79d8d-28fb-428d-b7ad-510776d1e8b1" name="FOV reliable camera"
               target="#904275ff-7956-4377-8f1b-4b816311027f" source="#ea755198-a7d7-4462-ba60-1bdfcdc22e40"/>
@@ -1304,8 +1300,8 @@
               id="67fa1d8a-ce43-4f80-aff8-617ae69798df" name="/reliable_GPS_data (not existing)"
               target="#3a657b24-a658-4f6d-aef5-11a1d47262d8" source="#577a627b-c93b-43e9-8d0e-420967c24adc"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="1a39e6fb-af89-4f6c-9845-ee23c1d1f1ed" name="/reliable_odometry_data (not existing)"
-              target="#b15d9c8a-10e6-4b53-a026-4ecb47fcf2be" source="#87321578-da22-4f80-9b86-8a6a5c6f6e9d"/>
+              id="de5e9feb-50a9-4330-95e7-8d998e11953b" name="/pose_otherCar" target="#ec819672-2ae9-4076-801f-aca1354f798d"
+              source="#1d7a5d3c-8dd5-43c9-be12-0e91e8755d7e"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
@@ -1687,6 +1683,9 @@
               <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                   id="0fc5835f-aaff-4248-ac97-91b8719fe1e0" targetElement="#71914385-0c9d-4140-b521-061599e30347"
                   sourceElement="#75018299-1105-4678-8f62-21ffb9f48b3e"/>
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="0a7256c6-40eb-49d3-95fe-5c70d7b98f96" targetElement="#dd25906e-c972-4ef3-8caa-5c93578fc31f"
+                  sourceElement="#75018299-1105-4678-8f62-21ffb9f48b3e"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="e1fc620c-d5f5-4849-99b6-522fcbe741c5" name="CP 1" orientation="IN"
                   kind="FLOW">
@@ -1700,22 +1699,7 @@
                     id="b5232ca1-487f-42ab-9b5e-5bcdd15a2ca2" targetElement="#e7691053-5f31-4495-a859-cb8d83977dee"
                     sourceElement="#e1fc620c-d5f5-4849-99b6-522fcbe741c5"/>
                 <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                    id="bff0c73d-e58b-4cdc-98be-6ea10257e0d1" targetElement="#3d3c805a-f4c0-458e-a6e2-140fa047ee48"
-                    sourceElement="#e1fc620c-d5f5-4849-99b6-522fcbe741c5"/>
-                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                    id="7b12d08c-e089-43cd-a575-80f2bc191af6" targetElement="#036b6a25-8d6a-4dda-b8c9-b7966d4184c0"
-                    sourceElement="#e1fc620c-d5f5-4849-99b6-522fcbe741c5"/>
-                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                    id="b6a2559e-99b8-4e41-af58-75ad1b0abd9c" targetElement="#6f92f4b0-653f-4d2e-ac0b-493ac8374938"
-                    sourceElement="#e1fc620c-d5f5-4849-99b6-522fcbe741c5"/>
-                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                     id="e9b8bb5d-8708-4fda-9fab-069e12eeeb3a" targetElement="#3a657b24-a658-4f6d-aef5-11a1d47262d8"
-                    sourceElement="#e1fc620c-d5f5-4849-99b6-522fcbe741c5"/>
-                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                    id="2430effc-89ed-4574-a0e3-12c61eac8599" targetElement="#b15d9c8a-10e6-4b53-a026-4ecb47fcf2be"
-                    sourceElement="#e1fc620c-d5f5-4849-99b6-522fcbe741c5"/>
-                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                    id="b9efe20f-20cf-4e80-b57d-3568c0680d6d" targetElement="#5b97943e-fc3c-43ff-aa84-3ff1a735b0ab"
                     sourceElement="#e1fc620c-d5f5-4849-99b6-522fcbe741c5"/>
               </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
@@ -2042,6 +2026,24 @@
                 <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                     id="cae18bac-2ab9-4868-a57a-e2f503aa9760" targetElement="#824f92ee-d45b-421d-89a1-df24e6edceff"
                     sourceElement="#724caa1f-3b89-49ba-b3c3-af3b1eab4fb2"/>
+                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                    id="653e4007-bd0e-4caa-9dc2-53c713b52f93" targetElement="#cefcfd28-b066-492f-9c02-8ec29a2c05b3"
+                    sourceElement="#724caa1f-3b89-49ba-b3c3-af3b1eab4fb2"/>
+                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                    id="a638aec1-9477-49a0-8bc9-55d2615f9142" targetElement="#fc2baefd-3660-438c-b28b-a5fad67d251c"
+                    sourceElement="#724caa1f-3b89-49ba-b3c3-af3b1eab4fb2"/>
+                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                    id="6900bff7-e6e5-4567-8fa8-e46c62251046" targetElement="#040ddc9a-7f90-4755-bf05-dc62a4906cdd"
+                    sourceElement="#724caa1f-3b89-49ba-b3c3-af3b1eab4fb2"/>
+                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                    id="e2bf833f-77f3-414e-9849-5ecb6c4908d1" targetElement="#7a7c9556-5e97-42b6-b738-8b6fde0fe2a3"
+                    sourceElement="#724caa1f-3b89-49ba-b3c3-af3b1eab4fb2"/>
+                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                    id="588ba301-1e00-43ae-88d5-7729a6b3c305" targetElement="#b6f7c61d-8395-49d0-a928-380121e80ee2"
+                    sourceElement="#724caa1f-3b89-49ba-b3c3-af3b1eab4fb2"/>
+                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
+                    id="cc7748c0-5921-4646-983d-3259b744a03a" targetElement="#0dc31954-e07a-4c72-b91b-abfdeec13bba"
+                    sourceElement="#724caa1f-3b89-49ba-b3c3-af3b1eab4fb2"/>
               </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="b8ae9529-a3df-4597-842e-82abf194c0ea" name="CP 2" orientation="OUT"
@@ -2103,9 +2105,6 @@
                     sourceElement="#6093847b-0da1-403f-9713-97792e6cef9d"/>
                 <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                     id="8e768a06-1b71-4433-b9be-2d1f7b5cab8f" targetElement="#577a627b-c93b-43e9-8d0e-420967c24adc"
-                    sourceElement="#6093847b-0da1-403f-9713-97792e6cef9d"/>
-                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                    id="299afed0-917d-4f51-bcd8-675311c8df0d" targetElement="#87321578-da22-4f80-9b86-8a6a5c6f6e9d"
                     sourceElement="#6093847b-0da1-403f-9713-97792e6cef9d"/>
                 <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
                     id="45935e5b-9641-4321-bfc7-86a919acd34e" targetElement="#08646412-e96d-466a-ac04-0a230c78f850"
