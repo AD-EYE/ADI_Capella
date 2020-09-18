@@ -626,9 +626,9 @@
                 source="#c6414702-8edb-44f0-b15c-c9ffdfb98348"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-              id="04329cab-c747-438a-8299-677b7bd15ea9" name="MAP">
+              id="04329cab-c747-438a-8299-677b7bd15ea9" name="MAP LOADER">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                id="746252f3-9476-464e-b28e-cbda43394d6b" name="/ponts_map_loader">
+                id="746252f3-9476-464e-b28e-cbda43394d6b" name="/points_map_loader">
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="0f18d4c9-9aab-4cbf-9800-99158388ce51" name="FOP 1"/>
             </ownedFunctions>
@@ -912,6 +912,8 @@
                   id="c712d967-62ad-4795-a637-077fc286d19b" name="FIP 1"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="475057e5-b782-43e9-a5e9-b6e6a3a5d9f9" name="FOP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="6eacbe8b-3f8e-461d-a84d-e327d0a698c0" name="FOP 2"/>
             </ownedFunctions>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
                 id="d81476f6-e652-4503-baac-ff98bcdca897" name="/gnss_broadcaster">
@@ -1183,9 +1185,6 @@
               id="9b657363-a097-4025-8fab-aced3efbcbaa" name="/lane_waypoints_array"
               target="#ab4b4d3d-22bd-419e-89ae-5abb895b6ac6" source="#5484cb29-f7a7-4167-89f9-cb2542e9b8b6"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="9920817b-d949-4cc5-ac40-a97fdd86e7a3" name="/points_raw" target="#a15c17cb-0923-46b1-a045-10b7cef36a08"
-              source="#475057e5-b782-43e9-a5e9-b6e6a3a5d9f9"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="c188204a-cef1-4970-8054-9c1f85e688e3" name="/vehicle_cmd" target="#f6be1db5-8929-4cce-b099-70332de6b426"
               source="#36b5acef-d183-4470-ba11-54852a0af0a4"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
@@ -1314,6 +1313,9 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="ac3e2521-1907-410c-83ff-834349fd370e" name="/twist_cmd" target="#bc8ad978-ff4d-4933-991c-822330aacfa0"
               source="#b9c4a18f-3192-4814-8d24-e8a9f4282cfd"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="b9bd04c9-c0d6-4689-9e6d-f7cd3655f69f" name="/points_raw" target="#a15c17cb-0923-46b1-a045-10b7cef36a08"
+              source="#6eacbe8b-3f8e-461d-a84d-e327d0a698c0"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
