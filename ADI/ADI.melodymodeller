@@ -18,7 +18,10 @@
     xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/1.4.0"
     id="91bb2edb-8823-416b-959e-00fa874132e8"
     name="ADI">
-  <ownedExtensions xsi:type="libraries:ModelInformation" id="7f3de0a7-0ea7-4d4d-ad8a-424598d37e96"/>
+  <ownedExtensions xsi:type="libraries:ModelInformation" id="7f3de0a7-0ea7-4d4d-ad8a-424598d37e96">
+    <ownedReferences xsi:type="libraries:LibraryReference" id="2496e847-c512-46ea-bf6b-dc17532f7778"
+        library="libraries:ModelInformation ../RCVE/RCVE.melodymodeller#c3ece808-bff8-4f03-9239-fb622f76edad"/>
+  </ownedExtensions>
   <ownedEnumerationPropertyTypes xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyType"
       id="e835e980-1fa9-4f66-8b29-804f931c70b0" name="ProgressStatus">
     <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
