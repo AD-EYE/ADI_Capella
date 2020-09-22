@@ -20,7 +20,8 @@
     name="ADI">
   <ownedExtensions xsi:type="libraries:ModelInformation" id="7f3de0a7-0ea7-4d4d-ad8a-424598d37e96">
     <ownedReferences xsi:type="libraries:LibraryReference" id="2496e847-c512-46ea-bf6b-dc17532f7778"
-        library="libraries:ModelInformation ../RCVE/RCVE.melodymodeller#c3ece808-bff8-4f03-9239-fb622f76edad"/>
+        library="libraries:ModelInformation ../RCVE/RCVE.melodymodeller#c3ece808-bff8-4f03-9239-fb622f76edad"
+        accessPolicy="readAndWrite"/>
   </ownedExtensions>
   <ownedEnumerationPropertyTypes xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyType"
       id="e835e980-1fa9-4f66-8b29-804f931c70b0" name="ProgressStatus">
@@ -218,6 +219,8 @@
               id="c1736567-fbfa-4f18-873a-c184ded4c493" name="Send TwistS data to RCVE part">
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="c0eb478c-1f3e-4691-a8b0-76c5b423beb2" name="FIP 1"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="251088c0-878c-4b8f-9068-8ebedd01613b" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="d293b602-2ad8-4dc1-8aa2-a69849179506" name="Static objects, moving actors, traffic lights, buildings and nature">
@@ -257,6 +260,8 @@
                 id="19ce2c76-ba3c-4965-8b05-3505b2a18e38" name="FOP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="c9c0fd6a-1232-4150-a98d-2ba089c81141" name="FOP 2"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="b4be3f5f-fed8-40c8-890c-afcaa5b07920" name="FOP 5"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="f0e077b2-c1b1-4127-9197-e55a4b79641f" name="Send GPS data">
@@ -1350,6 +1355,13 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="38960f56-81e4-4ff8-a97a-fb810788f6d6" name="/lane_waypoint_array"
               target="#88429e2e-32fe-4ce8-ad95-f6592d1a5223" source="#f28f7d61-6b8f-419b-82da-45fd2a137c68"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="ebf3545b-9d1b-43b6-b3fb-1e48e312fa65" name="Wheel spinning/IMU information"
+              target="org.polarsys.capella.core.data.fa:FunctionInputPort ../RCVE/RCVE.melodymodeller#0241c649-b2a3-4cd3-883e-1d1547a3747a"
+              source="#b4be3f5f-fed8-40c8-890c-afcaa5b07920"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="a80d627a-16cb-4e18-85ee-4cc3f0b11f12" name="TwistS data" target="org.polarsys.capella.core.data.fa:FunctionInputPort ../RCVE/RCVE.melodymodeller#e10b19cd-1956-4c37-b8bd-1e5c9cf3e90b"
+              source="#251088c0-878c-4b8f-9068-8ebedd01613b"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
@@ -1443,7 +1455,7 @@
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="970d918b-d9dd-48dc-90e0-d191ee7fa045"
               name="Software" abstractType="#e2351334-f2f7-4646-afcf-5c2e44f79a62"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="7d156a8b-88e1-44ed-be7e-9c5989de6ea5"
-              name="Interface with the RCVE project" abstractType="#580fe400-4db1-4c07-b7ff-01f8f85488f8"/>
+              name="Interface with base vehicle" abstractType="#580fe400-4db1-4c07-b7ff-01f8f85488f8"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="70bb3e23-14ce-4626-b725-b726f1f8b9aa"
               name="Sensors" abstractType="#8dfa7930-b193-423a-9090-0f3444253d61"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
@@ -2231,7 +2243,7 @@
             </ownedLogicalComponents>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="580fe400-4db1-4c07-b7ff-01f8f85488f8" name="Interface with the RCVE project">
+              id="580fe400-4db1-4c07-b7ff-01f8f85488f8" name="Interface with base vehicle">
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="27a8f98b-de57-4198-a497-e12740342bc0" targetElement="#c1736567-fbfa-4f18-873a-c184ded4c493"
                 sourceElement="#580fe400-4db1-4c07-b7ff-01f8f85488f8"/>
