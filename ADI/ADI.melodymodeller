@@ -1487,7 +1487,7 @@
                 id="e142de20-569b-4d35-88d9-03e9255a3c63" name="Data preloaded" source="#c6b5d641-89d3-4e1f-98fd-e304c1ce147d"
                 target="#d95d28b8-eb45-41a9-a4df-454a4e2a014b" kind="FLOW"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="99633718-68a2-4039-8061-2a3341288154" name="Nominal channel trajectory"
+                id="99633718-68a2-4039-8061-2a3341288154" name="Nominal Channel trajectory"
                 source="#fb8034e3-33d5-4e23-b329-d747dca42730" target="#16992fa9-e291-43df-91b0-9c4dc97aa5e9"
                 kind="FLOW"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
