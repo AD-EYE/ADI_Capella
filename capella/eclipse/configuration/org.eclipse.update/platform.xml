@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config date="1598531104724" transient="false">
+<config date="1593534130886" transient="false">
 	<site updateable="true" url="platform:/base/" enabled="true" policy="USER-EXCLUDE">
 		<feature id="org.polarsys.kitalpha.ad.integration.amalgam.feature" version="1.4.1.202006261040" url="features/org.polarsys.kitalpha.ad.integration.amalgam.feature_1.4.1.202006261040/">
 		</feature>
@@ -344,16 +344,6 @@
 		<feature id="org.eclipse.rcp" version="4.12.0.v20190605-1801" url="features/org.eclipse.rcp_4.12.0.v20190605-1801/">
 		</feature>
 		<feature id="org.eclipse.emf.ecore.editor.source" version="2.17.0.v20190528-0725" url="features/org.eclipse.emf.ecore.editor.source_2.17.0.v20190528-0725/">
-		</feature>
-	</site>
-	<site updateable="true" url="file:dropins\Atrium_202008271419\eclipse\" enabled="true" policy="USER-EXCLUDE">
-		<feature id="org.polarsys.capella.vp.atrium.feature" version="1.0.0.202008271419" url="features/org.polarsys.capella.vp.atrium.feature_1.0.0.202008271419/">
-		</feature>
-		<feature id="org.polarsys.capella.vp.atrium.representation.feature" version="1.0.0.202008271419" url="features/org.polarsys.capella.vp.atrium.representation.feature_1.0.0.202008271419/">
-		</feature>
-		<feature id="org.polarsys.capella.vp.atrium.rules.feature" version="1.0.0.202008271419" url="features/org.polarsys.capella.vp.atrium.rules.feature_1.0.0.202008271419/">
-		</feature>
-		<feature id="org.polarsys.capella.vp.atrium.af.feature" version="1.0.0.202008271419" url="features/org.polarsys.capella.vp.atrium.af.feature_1.0.0.202008271419/">
 		</feature>
 	</site>
 </config>
