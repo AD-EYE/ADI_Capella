@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2006, 2019 THALES GLOBAL SERVICES.
+  
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+  Contributors:
+       Thales - initial API and implementation
+-->
+<feature
+      id="org.polarsys.capella.patterns.feature"
+      label="%featureName"
+      version="1.4.1.202006301603"
+      provider-name="%providerName">
+
+   <description>
+      This is a customization of the Modeling Patterns framework for Capella.
+Its purpose it to provide a better user experience than the default one for Capella users.
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.polarsys.kitalpha.patterns.feature"/>
+   </requires>
+
+   <plugin
+         id="org.polarsys.capella.patterns"
+         download-size="61"
+         install-size="132"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.patterns.ui"
+         download-size="26"
+         install-size="45"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.patterns.obfuscator"
+         download-size="12"
+         install-size="17"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.patterns.migration"
+         download-size="26"
+         install-size="47"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+</feature>

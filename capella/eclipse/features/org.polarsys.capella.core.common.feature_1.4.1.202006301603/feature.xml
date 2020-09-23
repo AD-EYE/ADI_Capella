@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2006, 2019 THALES GLOBAL SERVICES.
+  
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+  Contributors:
+       Thales - initial API and implementation
+-->
+<feature
+      id="org.polarsys.capella.core.common.feature"
+      label="%featureName"
+      version="1.4.1.202006301603"
+      provider-name="%providerName">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.polarsys.capella.core.model.helpers"
+         download-size="462"
+         install-size="1210"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.business.queries"
+         download-size="1413"
+         install-size="3508"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.model.handler"
+         download-size="119"
+         install-size="256"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.diagram.helpers"
+         download-size="52"
+         install-size="113"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.model.skeleton"
+         download-size="42"
+         install-size="102"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.model.preferences"
+         download-size="27"
+         install-size="48"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.model.semantic"
+         download-size="31"
+         install-size="61"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.commandline.core"
+         download-size="45"
+         install-size="89"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.semantic.queries"
+         download-size="468"
+         install-size="1096"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.id.handler"
+         download-size="11"
+         install-size="15"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.application"
+         download-size="13"
+         install-size="19"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.af.integration"
+         download-size="25"
+         install-size="42"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.helpers"
+         download-size="413"
+         install-size="1022"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.gen"
+         download-size="2321"
+         install-size="8224"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.gen.edit"
+         download-size="1290"
+         install-size="3424"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.gen.edit.decorators"
+         download-size="78"
+         install-size="149"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+</feature>

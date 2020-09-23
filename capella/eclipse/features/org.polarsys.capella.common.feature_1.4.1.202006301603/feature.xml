@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2006, 2019 THALES GLOBAL SERVICES.
+
+  This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License 2.0
+  which is available at http://www.eclipse.org/legal/epl-2.0.
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+  Contributors:
+       Thales - initial API and implementation
+-->
+<feature
+      id="org.polarsys.capella.common.feature"
+      label="%featureName"
+      version="1.4.1.202006301603"
+      provider-name="%providerName">
+
+   <description url="http://www.example.com/description">
+      This feature contains the plug-ins which allow to use the model.
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.polarsys.capella.common"
+         download-size="78"
+         install-size="142"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.shared.id.handler"
+         download-size="17"
+         install-size="25"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.model"
+         download-size="28"
+         install-size="49"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.helpers"
+         download-size="42"
+         install-size="79"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.tools.report"
+         download-size="43"
+         install-size="79"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.ef"
+         download-size="32"
+         install-size="59"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.platform.sirius.ted"
+         download-size="47"
+         install-size="96"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.queries"
+         download-size="41"
+         install-size="72"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.model.helpers"
+         download-size="15"
+         install-size="23"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.menu.dynamic"
+         download-size="20"
+         install-size="35"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.mdsofa.common"
+         download-size="43"
+         install-size="77"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.data.activity.gen"
+         download-size="142"
+         install-size="445"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.data.activity.gen.edit"
+         download-size="70"
+         install-size="160"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.data.behavior.gen"
+         download-size="39"
+         install-size="94"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.data.behavior.gen.edit"
+         download-size="15"
+         install-size="24"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.data.core.gen"
+         download-size="98"
+         install-size="288"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.data.core.gen.edit"
+         download-size="48"
+         install-size="105"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.re.gen"
+         download-size="63"
+         install-size="144"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.re.gen.edit"
+         download-size="61"
+         install-size="134"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.libraries.gen"
+         download-size="41"
+         install-size="82"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.libraries.gen.edit"
+         download-size="37"
+         install-size="72"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.id.handler"
+         download-size="11"
+         install-size="15"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.data.helpers"
+         download-size="31"
+         install-size="57"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.libraries"
+         download-size="28"
+         install-size="47"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.re"
+         download-size="243"
+         install-size="592"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.flexibility.properties"
+         download-size="53"
+         install-size="108"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.transition"
+         download-size="262"
+         install-size="601"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+</feature>

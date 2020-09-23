@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2010-2019 Thales Global Services S.A.S.
+  This program and the accompanying materials are made
+  available under the terms of the Eclipse Public License 2.0
+  which is available at https://www.eclipse.org/legal/epl-2.0/
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+   Contributors:
+  Thales Global Services S.A.S - initial API and implementation
+-->
+<feature
+      id="org.eclipse.emf.diffmerge.feature"
+      label="%featureName"
+      version="0.12.0.201910020901"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+       %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.emf.diffmerge"
+         download-size="229"
+         install-size="554"
+         version="0.12.0.201910020901"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.diffmerge.ui"
+         download-size="540"
+         install-size="1178"
+         version="0.12.0.201910020901"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.diffmerge.connector.core"
+         download-size="32"
+         install-size="59"
+         version="0.12.0.201910020901"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.diffmerge.doc"
+         download-size="2701"
+         install-size="2845"
+         version="0.12.0.201910020901"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.diffmerge.structures"
+         download-size="146"
+         install-size="328"
+         version="0.12.0.201910020901"
+         unpack="false"/>
+
+</feature>

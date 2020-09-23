@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2006, 2019 THALES GLOBAL SERVICES.
+  
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+  Contributors:
+       Thales - initial API and implementation
+-->
+<feature
+      id="org.polarsys.capella.core.advance.feature"
+      label="%featureName"
+      version="1.4.1.202006301603"
+      provider-name="%providerName"
+      plugin="org.polarsys.capella.core.platform.sirius.ui.perspective">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.polarsys.capella.core.common.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.common.ui.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.properties.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.validation.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.ui.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.ui.semantic.browser.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.ui.quickfix.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.transfo.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.dashboard.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.transition.system.topdown.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.ui.wizards.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.re.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.libraries.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.migration.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.compare.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.patterns.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.detachment.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.doc.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.common.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.common.ui.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.ui.transfo.feature"
+         version="1.4.1.202006301603"/>
+
+   <includes
+         id="org.polarsys.capella.core.git.feature"
+         version="1.4.1.202006301603"/>
+         
+   <includes
+         id="org.polarsys.capella.core.mylyn.feature"
+         version="1.4.1.202006301603"/>
+</feature>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2017, 2019 THALES GLOBAL SERVICES.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License v1.0
+  which accompanies this distribution, and is available at
+  http://www.eclipse.org/legal/epl-v10.html
+
+  Contributors:
+       Thales - initial API and implementation
+-->
+<feature
+      id="org.polarsys.capella.common.ui.feature"
+      label="%featureName"
+      version="1.4.1.202006301603"
+      provider-name="%providerName">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.polarsys.capella.common.ui.massactions.feature"
+         version="1.4.1.202006301603"/>
+
+   <requires>
+      <import feature="org.polarsys.capella.common.feature"/>
+   </requires>
+
+   <plugin
+         id="org.polarsys.capella.common.tools.report.appenders.console"
+         download-size="18"
+         install-size="30"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.tools.report.appenders.file"
+         download-size="13"
+         install-size="16"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.tools.report.appenders.reportlogview"
+         download-size="164"
+         install-size="345"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.tools.report.ui"
+         download-size="16"
+         install-size="24"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.platform.eclipse.tools.report.console"
+         download-size="14"
+         install-size="19"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.platform.eclipse.tools.report.ui"
+         download-size="17"
+         install-size="25"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.ui"
+         download-size="205"
+         install-size="414"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.ui.services"
+         download-size="19"
+         install-size="33"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.ui.toolkit"
+         download-size="68"
+         install-size="121"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.ui.toolkit.browser"
+         download-size="64"
+         install-size="126"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.platform.sirius.customization"
+         download-size="19"
+         install-size="29"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.linkedtext.ui"
+         download-size="43"
+         install-size="85"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.ui.menu.dynamic"
+         download-size="19"
+         install-size="30"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.re.ui"
+         download-size="116"
+         install-size="269"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.flexibility.wizards"
+         download-size="143"
+         install-size="316"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.tools.report.appenders.usage"
+         download-size="25"
+         install-size="42"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.common.tools.report.appenders.usage.ui"
+         download-size="14"
+         install-size="19"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+</feature>

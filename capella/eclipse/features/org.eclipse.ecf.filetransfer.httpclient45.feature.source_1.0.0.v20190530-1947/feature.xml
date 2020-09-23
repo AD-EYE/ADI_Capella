@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.ecf.filetransfer.httpclient45.feature.source" version="1.0.0.v20190530-1947" label="%featureName" provider-name="%providerName">
+  <description url="%descriptionURL">
+      %description
+   </description>
+  <copyright>
+      %copyright
+   </copyright>
+  <license url="%licenseURL">
+      %license
+   </license>
+  <plugin id="org.eclipse.ecf.provider.filetransfer.httpclient45.source" version="1.0.0.v20190530-1947" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.ecf.provider.filetransfer.httpclient45.win32.source" version="1.0.0.v20190502-2116" download-size="0" install-size="0" os="win32" unpack="false"/>
+  <plugin id="org.apache.commons.codec.source" version="1.10.0.v20180409-1845" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.apache.commons.logging.source" version="1.2.0.v20180409-1502" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="com.sun.jna.source" version="4.5.1.v20180403-1933" download-size="0" install-size="0" os="win32" unpack="false"/>
+  <plugin id="com.sun.jna.platform.source" version="4.5.1.v20180403-1933" download-size="0" install-size="0" os="win32" unpack="false"/>
+  <plugin id="org.apache.httpcomponents.httpclient.source" version="4.5.6.v20190213-1430" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.apache.httpcomponents.httpclient.win.source" version="4.5.6.v20190213-1947" download-size="0" install-size="0" os="win32" unpack="false"/>
+  <plugin id="org.apache.httpcomponents.httpcore.source" version="4.4.10.v20190123-2214" download-size="0" install-size="0" unpack="false"/>
+</feature>

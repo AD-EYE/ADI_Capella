@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2015 Obeo
+  This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License 2.0
+  which accompanies this distribution, and is available at
+  https://www.eclipse.org/legal/epl-2.0/
+
+  SPDX-License-Identifier: EPL-2.0
+
+  Contributors:
+       Obeo - Initial API and implementation
+-->
+<feature
+      id="org.eclipse.sirius.interpreter.feature"
+      label="%featureName"
+      version="6.3.2.202006260831"
+      provider-name="%providerName"
+      plugin="org.eclipse.sirius.common.interpreter">
+
+   <description url="http://www.eclipse.org/sirius">
+      Sirius generic interpreter API.
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.sirius.common.interpreter"
+         download-size="18"
+         install-size="27"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.common.interpreter.aql"
+         download-size="11"
+         install-size="18"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+</feature>

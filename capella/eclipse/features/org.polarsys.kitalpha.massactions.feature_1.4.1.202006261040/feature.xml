@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.polarsys.kitalpha.massactions.feature"
+      label="%featureName"
+      version="1.4.1.202006261040"
+      provider-name="%providerName">
+
+   <description url="http://www.example.com/description">
+      %description
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="org.polarsys.kitalpha.massactions"
+         download-size="28"
+         install-size="47"
+         version="1.4.1.202006261040"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.kitalpha.massactions.core"
+         download-size="99"
+         install-size="196"
+         version="1.4.1.202006261040"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.kitalpha.massactions.doc"
+         download-size="456"
+         install-size="582"
+         version="1.4.1.202006261040"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.kitalpha.massactions.edit"
+         download-size="17"
+         install-size="30"
+         version="1.4.1.202006261040"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.kitalpha.massactions.visualize"
+         download-size="54"
+         install-size="111"
+         version="1.4.1.202006261040"
+         unpack="false"/>
+
+</feature>

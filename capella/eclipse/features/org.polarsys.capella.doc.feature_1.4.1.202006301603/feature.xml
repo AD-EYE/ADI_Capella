@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2006, 2019 THALES GLOBAL SERVICES.
+  
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+  Contributors:
+       Thales - initial API and implementation
+-->
+<feature
+      id="org.polarsys.capella.doc.feature"
+      label="%featureName"
+      version="1.4.1.202006301603"
+      provider-name="%providerName">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.polarsys.capella.viewpoint.doc"
+         download-size="43"
+         install-size="53"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.commandline.doc"
+         download-size="321"
+         install-size="355"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.diffmerge.doc"
+         download-size="59"
+         install-size="72"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.patterns.doc"
+         download-size="522"
+         install-size="547"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.preferences.doc"
+         download-size="997"
+         install-size="1107"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.properties.doc"
+         download-size="84"
+         install-size="243"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.re.doc"
+         download-size="2842"
+         install-size="3055"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.transitions.doc"
+         download-size="2193"
+         install-size="2514"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.ui.doc"
+         download-size="18867"
+         install-size="19941"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.doc"
+         download-size="543"
+         install-size="4162"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.diagrams.doc"
+         download-size="3284"
+         install-size="4251"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.glossary.doc"
+         download-size="419"
+         install-size="538"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.validation.doc"
+         download-size="86"
+         install-size="287"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.developer.doc"
+         download-size="371"
+         install-size="390"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.th.doc"
+         download-size="12047"
+         install-size="13102"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.tipsandtricks.doc"
+         download-size="15729"
+         install-size="16215"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.re.updateconnections.doc"
+         download-size="206"
+         install-size="223"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.git.doc"
+         download-size="1272"
+         install-size="1458"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2006, 2019 THALES GLOBAL SERVICES.
+  
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+  Contributors:
+       Thales - initial API and implementation
+-->
+<feature
+      id="org.polarsys.capella.core.common.ui.feature"
+      label="%featureName"
+      version="1.4.1.202006301603"
+      provider-name="%providerName">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.polarsys.capella.core.common.feature"/>
+   </requires>
+
+   <plugin
+         id="org.polarsys.capella.common.ui.resources"
+         download-size="15"
+         install-size="24"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.ui.toolkit"
+         download-size="158"
+         install-size="337"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.ui.resources"
+         download-size="464"
+         install-size="493"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.preferences"
+         download-size="227"
+         install-size="496"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.commandline.core.ui"
+         download-size="23"
+         install-size="36"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.af.integration.ui"
+         download-size="21"
+         install-size="32"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.res.edit"
+         download-size="726"
+         install-size="831"
+         version="1.4.1.202006301603"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.res.editor"
+         download-size="64"
+         install-size="73"
+         version="1.4.1.202006301603"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.gen.editor"
+         download-size="1457"
+         install-size="3239"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+</feature>

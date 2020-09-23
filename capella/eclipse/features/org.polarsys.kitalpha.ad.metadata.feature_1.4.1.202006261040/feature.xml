@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2006, 2018 THALES GLOBAL SERVICES.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License v1.0
+  which accompanies this distribution, and is available at
+  http://www.eclipse.org/legal/epl-v10.html
+
+  Contributors:
+       Thales - initial API and implementation
+-->
+<feature
+      id="org.polarsys.kitalpha.ad.metadata.feature"
+      label="%featureName"
+      version="1.4.1.202006261040"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.polarsys.kitalpha.ad.metadata"
+         download-size="21"
+         install-size="42"
+         version="1.4.1.202006261040"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.kitalpha.ad.metadata.model"
+         download-size="21"
+         install-size="41"
+         version="1.4.1.202006261040"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.kitalpha.ad.metadata.model.edit"
+         download-size="17"
+         install-size="28"
+         version="1.4.1.202006261040"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.kitalpha.ad.metadata.model.editor"
+         download-size="66"
+         install-size="130"
+         version="1.4.1.202006261040"
+         unpack="false"/>
+
+</feature>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2006, 2018 THALES GLOBAL SERVICES.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License v1.0
+  which accompanies this distribution, and is available at
+  http://www.eclipse.org/legal/epl-v10.html
+
+  Contributors:
+       Thales - initial API and implementation
+-->
+<feature
+      id="org.polarsys.kitalpha.patterns.feature"
+      label="%featureName"
+      version="1.4.1.202006261040"
+      provider-name="%providerName">
+
+   <description>
+      This is a customization of the Modeling Patterns framework for Kitalpha.
+Its purpose it to provide a better user experience than the default one for Kitalpha users.
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.polarsys.kitalpha.patterns.emde"
+         download-size="6"
+         install-size="10"
+         version="0.8.0.202006261040"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.kitalpha.patterns.emde.gen"
+         download-size="17"
+         install-size="35"
+         version="0.8.0.202006261040"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.kitalpha.patterns.emde.gen.edit"
+         download-size="10"
+         install-size="19"
+         version="0.8.0.202006261040"
+         unpack="false"/>
+
+</feature>

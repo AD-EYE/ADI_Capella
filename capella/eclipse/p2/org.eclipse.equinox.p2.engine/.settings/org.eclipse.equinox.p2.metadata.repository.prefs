@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target/description=
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target/enabled=true
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target/isSystem=false
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target/name=module-metadata-repository@/home/jenkins/agent/workspace/capella-product_v1.4.x/releng/plugins/org.polarsys.capella.rcp.product/target
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target/provider=
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target/suffix=p2content.xml
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target/type=org.eclipse.tycho.repository.module.ModuleMetadataRepository
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target/uri=file\:/home/jenkins/agent/workspace/capella-product_v1.4.x/releng/plugins/org.polarsys.capella.rcp.product/target/
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target/version=1.0.0
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target_targetPlatformRepository/enabled=true
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target_targetPlatformRepository/isSystem=false
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target_targetPlatformRepository/name=TychoTargetPlatform
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target_targetPlatformRepository/suffix=content.xml
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target_targetPlatformRepository/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target_targetPlatformRepository/uri=file\:/home/jenkins/agent/workspace/capella-product_v1.4.x/releng/plugins/org.polarsys.capella.rcp.product/target/targetPlatformRepository/
+repositories/file\:_home_jenkins_agent_workspace_capella-product_v1.4.x_releng_plugins_org.polarsys.capella.rcp.product_target_targetPlatformRepository/version=0.0.1

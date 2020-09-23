@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2007, 2015 THALES GLOBAL SERVICES and others
+  This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License 2.0
+  which accompanies this distribution, and is available at
+  https://www.eclipse.org/legal/epl-2.0/
+
+  SPDX-License-Identifier: EPL-2.0
+
+  Contributors:
+       Obeo - Initial API and implementation
+-->
+<feature
+      id="org.eclipse.sirius.runtime"
+      label="%featureName"
+      version="6.3.2.202006260831"
+      provider-name="%providerName"
+      plugin="org.eclipse.sirius">
+
+   <description url="http://www.eclipse.org/sirius">
+The core runtime of Sirius, UI-independant and dialect-agnostic.
+Install this if you want to either use existing Sirius-based modelers or create new ones.
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.sirius.common"
+         download-size="249"
+         install-size="534"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.ecore.extender"
+         download-size="90"
+         install-size="190"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.synchronizer"
+         download-size="36"
+         install-size="64"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius"
+         download-size="1392"
+         install-size="3437"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.diagram"
+         download-size="1402"
+         install-size="3861"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.diagram.formatdata"
+         download-size="56"
+         install-size="124"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+         
+   <plugin
+         id="org.eclipse.sirius.table"
+         download-size="343"
+         install-size="919"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.tree"
+         download-size="248"
+         install-size="629"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.ext.base"
+         download-size="28"
+         install-size="49"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.ext.e3"
+         download-size="7"
+         install-size="10"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.ext.emf"
+         download-size="17"
+         install-size="28"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.ext.emf.edit"
+         download-size="14"
+         install-size="31"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.ext.emf.tx"
+         download-size="9"
+         install-size="13"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.ext.gmf.notation"
+         download-size="7"
+         install-size="10"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.sirius.ext.ide"
+         download-size="19"
+         install-size="32"
+         version="6.3.2.202006260831"
+         unpack="false"/>
+
+</feature>

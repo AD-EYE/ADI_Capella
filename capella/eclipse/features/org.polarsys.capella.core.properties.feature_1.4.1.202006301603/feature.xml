@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2006, 2019 THALES GLOBAL SERVICES.
+  
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+  Contributors:
+       Thales - initial API and implementation
+-->
+<feature
+      id="org.polarsys.capella.core.properties.feature"
+      label="%featureName"
+      version="1.4.1.202006301603"
+      provider-name="%providerName">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.polarsys.capella.core.common.ui.feature"/>
+   </requires>
+
+   <plugin
+         id="org.polarsys.capella.core.ui.properties"
+         download-size="259"
+         install-size="557"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.information.properties"
+         download-size="105"
+         install-size="247"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.core.properties"
+         download-size="72"
+         install-size="159"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.cs.properties"
+         download-size="70"
+         install-size="159"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.information.datatype.properties"
+         download-size="48"
+         install-size="105"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.interaction.properties"
+         download-size="225"
+         install-size="562"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.common.properties"
+         download-size="72"
+         install-size="161"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.information.datavalue.properties"
+         download-size="84"
+         install-size="198"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.fa.properties"
+         download-size="99"
+         install-size="231"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.modeller.properties"
+         download-size="15"
+         install-size="24"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.sharedmodel.properties"
+         download-size="13"
+         install-size="20"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.pa.deployment.properties"
+         download-size="19"
+         install-size="36"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.pa.properties"
+         download-size="26"
+         install-size="51"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.epbs.properties"
+         download-size="25"
+         install-size="47"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.oa.properties"
+         download-size="50"
+         install-size="116"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.la.properties"
+         download-size="26"
+         install-size="52"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.requirement.properties"
+         download-size="28"
+         install-size="55"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.ctx.properties"
+         download-size="35"
+         install-size="75"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.information.communication.properties"
+         download-size="30"
+         install-size="60"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+</feature>

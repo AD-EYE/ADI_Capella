@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2006, 2019 THALES GLOBAL SERVICES.
+  
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+  Contributors:
+       Thales - initial API and implementation
+-->
+<feature
+      id="org.polarsys.capella.core.transfo.feature"
+      label="%featureName"
+      version="1.4.1.202006301603"
+      provider-name="%providerName">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.polarsys.capella.core.ui.feature"/>
+      <import feature="org.polarsys.capella.core.validation.feature"/>
+   </requires>
+
+   <plugin
+         id="org.polarsys.capella.core.tiger"
+         download-size="69"
+         install-size="152"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.projection.common"
+         download-size="78"
+         install-size="166"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.projection.interfaces"
+         download-size="68"
+         install-size="152"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.projection.exchanges"
+         download-size="50"
+         install-size="109"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.projection.scenario"
+         download-size="155"
+         install-size="379"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.transition.diagram"
+         download-size="69"
+         install-size="172"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+</feature>

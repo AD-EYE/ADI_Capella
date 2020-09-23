@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2006, 2019 THALES GLOBAL SERVICES.
+  
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0
+  
+  SPDX-License-Identifier: EPL-2.0
+  
+  Contributors:
+       Thales - initial API and implementation
+-->
+<feature
+      id="org.polarsys.capella.core.ui.feature"
+      label="%featureName"
+      version="1.4.1.202006301603"
+      provider-name="%providerName">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.polarsys.capella.core.properties.feature"/>
+   </requires>
+
+   <plugin
+         id="org.polarsys.capella.core.data.business.queries"
+         download-size="1413"
+         install-size="3508"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.selection.queries"
+         download-size="23"
+         install-size="38"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.platform.eclipse.ui.trace"
+         download-size="113"
+         install-size="208"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.platform.sirius.ui.menu"
+         download-size="19"
+         install-size="47"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.platform.sirius.ui.perspective"
+         download-size="111"
+         install-size="513"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.platform.sirius.adapter"
+         download-size="13"
+         install-size="19"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.platform.sirius.ui.navigator"
+         download-size="302"
+         install-size="656"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.platform.sirius.ui.project"
+         download-size="93"
+         install-size="186"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.sirius.ui"
+         download-size="231"
+         install-size="509"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.sirius.analysis"
+         download-size="1776"
+         install-size="8512"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.platform.sirius.ui.actions"
+         download-size="182"
+         install-size="415"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.menu.dynamic"
+         download-size="30"
+         install-size="57"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.platform.sirius.ui.services"
+         download-size="15"
+         install-size="23"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.services"
+         download-size="14"
+         install-size="20"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.data.menu.contributions"
+         download-size="210"
+         install-size="477"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.model.handler"
+         download-size="119"
+         install-size="256"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.ui.metric"
+         download-size="72"
+         install-size="147"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+         
+    <plugin
+         id="org.polarsys.capella.ui.views"
+         download-size="13"
+         install-size="15"
+         version="1.4.1.202006301603"
+         fragment="true"
+         unpack="false"/>     
+
+   <plugin
+         id="org.polarsys.capella.core.model.obfuscator"
+         download-size="30"
+         install-size="54"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.ui.reportlog"
+         download-size="25"
+         install-size="37"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.validation.commandline"
+         download-size="23"
+         install-size="39"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.preferences.project.configuration"
+         download-size="71"
+         install-size="133"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.platform.sirius.clipboard"
+         download-size="103"
+         install-size="228"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.linkedtext.ui"
+         download-size="27"
+         install-size="46"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+   <plugin
+         id="org.polarsys.capella.core.ui.intro"
+         download-size="32"
+         install-size="40"
+         version="1.4.1.202006301603"
+         unpack="false"/>
+
+</feature>
