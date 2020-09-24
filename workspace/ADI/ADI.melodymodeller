@@ -1400,6 +1400,14 @@
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
             id="5dd0334a-92ca-4950-8259-ddbff6baa0ca" name="Movements" source="#7980fd36-66ad-4fb9-89fb-6d4ec7edac18"
             target="#c00dd4cd-ce56-4b2f-ab05-c33f209ee469" kind="FLOW"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="c7f3a4d8-8e67-4da4-9c50-c21dec927a1c" name="ADI command" source="#cc1c9492-9ca8-4c48-9814-d4a65f01fffd"
+            target="org.polarsys.capella.core.data.fa:ComponentPort ../RCVE/RCVE.melodymodeller#57d9a124-823d-4b92-aa17-e3acfe7f6a51"
+            kind="FLOW"/>
+        <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+            id="32b9d12e-777c-4b5f-9747-3cdb20ec3a84" name="RCVE feedback" source="#b60c3cd0-960a-4afa-aacb-c3c134de4a96"
+            target="org.polarsys.capella.core.data.fa:ComponentPort ../RCVE/RCVE.melodymodeller#839203d4-5f36-4c64-9ec9-3e7e8c0784c8"
+            kind="FLOW"/>
         <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
             id="29f277f6-c87b-4ae8-a3cd-aa88c3471bc2" name="Infrared light" linkEnds="#74094414-bfff-40d2-9021-179f6b8a147c #a96dcd7c-0acb-4b85-83bc-caa7c23e9aa7"/>
         <ownedPhysicalLinks xsi:type="org.polarsys.capella.core.data.cs:PhysicalLink"
@@ -2286,6 +2294,12 @@
                   id="c131b8b7-59e9-4cc1-aab6-67e219006bae" targetElement="#2a61dc50-b980-412c-ba0c-42e786b6168c"
                   sourceElement="#8933e81a-e7c8-4715-9343-3e9615114145"/>
             </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="cc1c9492-9ca8-4c48-9814-d4a65f01fffd" name="CP 4" orientation="OUT"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="b60c3cd0-960a-4afa-aacb-c3c134de4a96" name="CP 5" orientation="OUT"
+                kind="FLOW"/>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="8dfa7930-b193-423a-9090-0f3444253d61" name="Sensors">

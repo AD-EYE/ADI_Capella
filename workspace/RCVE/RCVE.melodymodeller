@@ -1211,6 +1211,12 @@
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="8ccd613d-1801-4ed0-8a86-11db5961f7ac" name="CP 2" orientation="IN"
                 kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="57d9a124-823d-4b92-aa17-e3acfe7f6a51" name="CP 3" orientation="IN"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="839203d4-5f36-4c64-9ec9-3e7e8c0784c8" name="CP 4" orientation="IN"
+                kind="FLOW"/>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="d5e3019c-b740-4d2b-8843-d3f23ad1c063" name="Network Switch">
