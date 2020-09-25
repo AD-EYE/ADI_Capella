@@ -2,7 +2,7 @@
 <feature
       id="org.polarsys.capella.vp.atrium.representation.feature"
       label="%featureName"
-      version="0.9.1"
+      version="0.9.2"
       provider-name="%providerName">
 
    <description url="%descriptionURL">
@@ -21,21 +21,21 @@
          id="org.polarsys.capella.vp.atrium.ui"
          download-size="0"
          install-size="0"
-         version="0.9.1"
+         version="0.9.2"
          unpack="false"/>
 
    <plugin
          id="org.polarsys.capella.vp.atrium.design"
          download-size="0"
          install-size="0"
-         version="0.9.1"
+         version="0.9.2"
          unpack="false"/>
 
    <plugin
          id="org.polarsys.capella.vp.atrium.contextual.explorer"
          download-size="0"
          install-size="0"
-         version="0.9.1"
+         version="0.9.2"
          unpack="false"/>
 
 </feature>
