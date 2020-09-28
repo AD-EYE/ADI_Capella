@@ -816,13 +816,32 @@
               source="#7668b07c-8c27-4395-8aee-ef8f29f6dc3b" target="#8ccd613d-1801-4ed0-8a86-11db5961f7ac"
               kind="FLOW"/>
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-              id="bfb1ece3-ebb9-4ced-896e-058824719e67" name="Rotation information"
+              id="bfb1ece3-ebb9-4ced-896e-058824719e67" name="Torque command (FL)"
               source="#1f5eaa76-5af4-4757-be80-1e3cb198c4fd" target="#83a52604-2311-4f3a-a63b-62a4ec94593b"
               kind="FLOW"/>
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-              id="745ea5ab-750c-4c31-b7fc-0ada2088c1e0" name="Seected twist from ADI repeated"
+              id="745ea5ab-750c-4c31-b7fc-0ada2088c1e0" name="Selected twist from ADI repeated"
               source="#a9c7f38f-713e-479e-ba81-220af5d474e0" target="#e0896470-6db1-4f7e-a775-e41f974e777f"
               kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="4411c88c-1f19-47a6-b1c7-657860dcae9c" name="Steering feeback (FL)"
+              source="#ddc5f070-d525-4e27-a1a7-58686aedbf75" target="#43f27db0-844b-4a9f-b5ac-3dc2b1fc1b42"
+              kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="0e17ca59-a6eb-41d3-b674-c7591ec2b60e" name="Steering command (FL)"
+              source="#d584861c-0425-45e3-8638-4083579eb4d1" target="#710395f3-b1ba-47b6-8dcb-99b4454ef5cc"
+              kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="16cf46d7-9eee-45a5-887e-10ec90abb373" name="Torque feedback (FL)"
+              source="#0dd5f20e-159a-48f3-ae42-bf57506c7e96" target="#4ce47a72-580c-43b6-8bb5-94111802ba40"
+              kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="411e3b1b-9359-4905-b945-737e19558a4f" name="Pressure feedback (FL)"
+              source="#fb01cbaa-b96d-4775-95c8-b95f31712c25" target="#42a62139-a444-417b-a7b8-d8162efe1c00"
+              kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="c6c1cfaa-0e0d-42d8-ada6-e3923db4b006" name="Pump command (FL)" source="#3040e9d2-d93c-44ad-b0c9-79fb5347e235"
+              target="#ff03ee3a-da0f-4011-a639-9a45a934e2de" kind="FLOW"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="76fd37cd-9e6f-4a28-acf8-a94130e3122e"
               name="Kollmorgen Drive (FL)" abstractType="#422ddd4a-bf53-402b-bb9a-27be2fe8386d"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="3e3a865a-9813-4270-af6a-f9b796c96a55"
@@ -892,6 +911,9 @@
                 sourceElement="#422ddd4a-bf53-402b-bb9a-27be2fe8386d"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="1f5eaa76-5af4-4757-be80-1e3cb198c4fd" name="CP 1" orientation="OUT"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="0dd5f20e-159a-48f3-ae42-bf57506c7e96" name="CP 2" orientation="OUT"
                 kind="FLOW"/>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
@@ -1006,6 +1028,9 @@
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="9643e632-ef36-49da-90b7-22eb4894fb70" name="CP 1" orientation="OUT"
                 kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="d584861c-0425-45e3-8638-4083579eb4d1" name="CP 2" orientation="OUT"
+                kind="FLOW"/>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="9c0925bd-f138-4d16-ac28-a17ff3a15b32" name="MABX">
@@ -1021,6 +1046,24 @@
                 name="Brake control" abstractType="#72871921-76f5-4e2d-b8a3-5fa3974eae2d"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="e0896470-6db1-4f7e-a775-e41f974e777f" name="CP 4" orientation="IN"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="43f27db0-844b-4a9f-b5ac-3dc2b1fc1b42" name="CP 5" orientation="IN"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="710395f3-b1ba-47b6-8dcb-99b4454ef5cc" name="CP 6" orientation="IN"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="83a52604-2311-4f3a-a63b-62a4ec94593b" name="CP 3" orientation="IN"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="4ce47a72-580c-43b6-8bb5-94111802ba40" name="CP 8" orientation="IN"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="42a62139-a444-417b-a7b8-d8162efe1c00" name="CP 9" orientation="IN"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="ff03ee3a-da0f-4011-a639-9a45a934e2de" name="CP 10" orientation="IN"
                 kind="FLOW"/>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="b412f70d-d6b9-4194-94ee-6b399236cd87" name="Steering Control">
@@ -1067,6 +1110,9 @@
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="292d445e-0bca-42f2-9e43-07208e0822d0" targetElement="#1cb55fed-7a77-49af-b62a-2ecdfa2bf5ac"
                 sourceElement="#36dd0346-9907-4f36-92bf-837c10b405dd"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="3040e9d2-d93c-44ad-b0c9-79fb5347e235" name="CP 1" orientation="OUT"
+                kind="FLOW"/>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="bc5a8379-7467-41f5-b4c4-c1bfcbec8858" name="ESCON (FR)">
@@ -1097,6 +1143,9 @@
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="5f07d461-9061-42cd-8adc-2ba57524cb63" targetElement="#de9b585f-6292-4251-b19e-1a936f4ae2f3"
                 sourceElement="#68398e18-0051-4da5-934a-e71642bac987"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="ddc5f070-d525-4e27-a1a7-58686aedbf75" name="CP 1" orientation="OUT"
+                kind="FLOW"/>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="2d2cb810-51b8-41ba-a492-a727dfec1dc6" name="FR Steering Motor">
@@ -1139,6 +1188,9 @@
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="46202fe2-03f3-479b-899a-2996e89cdc69" targetElement="#f0f20878-2f38-4a31-ae62-6239d6b5eb9e"
                 sourceElement="#add1aea6-b0dd-4498-9260-db9c4c103e33"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="fb01cbaa-b96d-4775-95c8-b95f31712c25" name="CP 1" orientation="OUT"
+                kind="FLOW"/>
           </ownedLogicalComponents>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="3150ed83-e398-4fca-9664-09f8ab768f42" name="Pressure sensor FR">
@@ -1225,9 +1277,6 @@
                 kind="FLOW"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="7668b07c-8c27-4395-8aee-ef8f29f6dc3b" name="CP 2" orientation="OUT"
-                kind="FLOW"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                id="83a52604-2311-4f3a-a63b-62a4ec94593b" name="CP 3" orientation="IN"
                 kind="FLOW"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                 id="a9c7f38f-713e-479e-ba81-220af5d474e0" name="CP 4" orientation="OUT"
