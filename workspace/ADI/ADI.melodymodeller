@@ -1533,17 +1533,14 @@
           <ownedExtensions xsi:type="Atrium:CFA" id="a32dc845-4174-467b-a1c8-db8a8b12f7d9"
               name="Sensors digital data : Component suddenly stop" content="The software suddenly does not receive any input from the sensors anymore."
               linkedtoElement="#2c7aa795-dd65-413c-aa1b-af3354b58d09" linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b"
-              assumption="#35029f68-7b20-4447-b7d2-c08675d056dc #fb704b49-93ca-473e-884d-ad063dd7a3d6 #38c8399b-488b-4f4c-aa11-e11aab5701f2 #18787e65-35f4-4a29-8b87-834118ad6dbe #d5f7249b-9eb2-4588-aa05-dbe550968cb8 #87a12594-019f-401d-a16d-ad01d9b0869d #1ae344d5-0743-4510-bff2-a4718696c8b0 #70fc3837-3b93-4572-915e-aa8bf3e59360 #42a5c4b6-c366-44bd-b030-beebc590f32e #7e32c965-9915-4ae3-9ecd-bc5b00cdbc38 #4c3d5698-eba8-47e3-b2f8-dba88ec4fd9c #274c86f1-89ec-4b74-a563-48d75fea7e8c #0654ea6b-2e1b-4160-9c63-8ef062fec516 #bd3c2be8-b37f-48b3-8a7a-71f1380dcb45 #b676dbf7-d9dc-4d30-ae76-57ca9e49897c"
               goal="#ebf74c52-fba9-42f3-8496-80b3a70d9bd2" state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="2c423eeb-3adf-4286-8a42-4a8b6bf4347d"
               name="Data preloaded : Component suddenly stop" content="The nominal channel suddenly lose all pre-loaded data about the map and the environnement."
               linkedtoElement="#e142de20-569b-4d35-88d9-03e9255a3c63" linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b"
-              assumption="#35029f68-7b20-4447-b7d2-c08675d056dc #56882f27-78b5-4c9a-8c1a-e7a8eeaa493e #38c8399b-488b-4f4c-aa11-e11aab5701f2 #d5f7249b-9eb2-4588-aa05-dbe550968cb8 #1ae344d5-0743-4510-bff2-a4718696c8b0 #70fc3837-3b93-4572-915e-aa8bf3e59360 #42a5c4b6-c366-44bd-b030-beebc590f32e #7e32c965-9915-4ae3-9ecd-bc5b00cdbc38 #4c3d5698-eba8-47e3-b2f8-dba88ec4fd9c #274c86f1-89ec-4b74-a563-48d75fea7e8c #bd3c2be8-b37f-48b3-8a7a-71f1380dcb45"
               goal="#ebf74c52-fba9-42f3-8496-80b3a70d9bd2" state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="b88f52c2-e765-429f-b2d0-65932fdcd302"
               name="Nominal Channel trajectory : Component suddenly stop" content="The Nominal channel suddenly stop giving commands"
               linkedtoElement="#99633718-68a2-4039-8061-2a3341288154" linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b"
-              assumption="#35029f68-7b20-4447-b7d2-c08675d056dc #fb704b49-93ca-473e-884d-ad063dd7a3d6 #56882f27-78b5-4c9a-8c1a-e7a8eeaa493e #38c8399b-488b-4f4c-aa11-e11aab5701f2 #d5f7249b-9eb2-4588-aa05-dbe550968cb8 #1ae344d5-0743-4510-bff2-a4718696c8b0 #70fc3837-3b93-4572-915e-aa8bf3e59360 #4d391e26-0226-46eb-857b-add715ff3e90 #42a5c4b6-c366-44bd-b030-beebc590f32e #7e32c965-9915-4ae3-9ecd-bc5b00cdbc38 #4c3d5698-eba8-47e3-b2f8-dba88ec4fd9c #274c86f1-89ec-4b74-a563-48d75fea7e8c #bd3c2be8-b37f-48b3-8a7a-71f1380dcb45"
               goal="#ebf74c52-fba9-42f3-8496-80b3a70d9bd2" state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="431f5ed4-cf04-4977-aff9-8cb84768cbe0"
               name="SafetyChannel's command : Component suddenly stop" content="The safety channel suddenly stop giving commands"
@@ -1556,12 +1553,10 @@
           <ownedExtensions xsi:type="Atrium:CFA" id="19405f57-245f-414b-aa02-713cb6793bdf"
               name="Selected command : Component suddenly stop" content="The controlSwitch suddenly stop to send command to the interface between RCVE and ADI."
               linkedtoElement="#0ab299c3-71c0-47d0-b8fd-6547bba889b6" linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b"
-              assumption="#35029f68-7b20-4447-b7d2-c08675d056dc #7ed3cd42-9046-413b-b525-295785d31ffc #fb704b49-93ca-473e-884d-ad063dd7a3d6 #56882f27-78b5-4c9a-8c1a-e7a8eeaa493e #38c8399b-488b-4f4c-aa11-e11aab5701f2 #2d163756-5212-4269-89b1-e67bd10f6889 #d5f7249b-9eb2-4588-aa05-dbe550968cb8 #70fc3837-3b93-4572-915e-aa8bf3e59360 #42a5c4b6-c366-44bd-b030-beebc590f32e #7e32c965-9915-4ae3-9ecd-bc5b00cdbc38 #4c3d5698-eba8-47e3-b2f8-dba88ec4fd9c #274c86f1-89ec-4b74-a563-48d75fea7e8c #2e0e3eec-094f-472c-891b-23ee8242384c #5cbbc0d9-123e-4672-a0c0-fb4747d146f2"
               goal="#b4607250-8e0b-4dd6-a0cd-cfdc3a6e46bd" state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="b721849c-0652-402d-8ec1-a0879d54ac6b"
               name="Internal car information : Component suddenly stop" content="The information on odometry and IMU are not being received by ADI."
               linkedtoElement="#dc9ce98d-9322-4fe3-9019-444bce48bcad" linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b"
-              assumption="#35029f68-7b20-4447-b7d2-c08675d056dc #7ed3cd42-9046-413b-b525-295785d31ffc #fb704b49-93ca-473e-884d-ad063dd7a3d6 #56882f27-78b5-4c9a-8c1a-e7a8eeaa493e #38c8399b-488b-4f4c-aa11-e11aab5701f2 #2d163756-5212-4269-89b1-e67bd10f6889 #d5f7249b-9eb2-4588-aa05-dbe550968cb8 #1ae344d5-0743-4510-bff2-a4718696c8b0 #eaaee51e-7ef2-476b-8551-473cc8d51ffc #fb822aae-2779-4797-b08e-39631ba30e64 #a67f0ecd-3a75-46d6-8ed1-92baf50b0573 #70fc3837-3b93-4572-915e-aa8bf3e59360 #4d391e26-0226-46eb-857b-add715ff3e90 #42a5c4b6-c366-44bd-b030-beebc590f32e #7e32c965-9915-4ae3-9ecd-bc5b00cdbc38 #4c3d5698-eba8-47e3-b2f8-dba88ec4fd9c #0edf851f-c0ea-4eed-9f23-dc6cc1a318b4 #b25aec30-a38e-42b5-8529-f50a814ea0d4 #a608f1fc-4951-4fe6-b70f-a25cbcb71d8c #274c86f1-89ec-4b74-a563-48d75fea7e8c #0654ea6b-2e1b-4160-9c63-8ef062fec516 #13c17b37-c658-48a4-a535-79db0660fd80"
               goal="#98e133dc-5b95-4677-a6d8-20b839992a8b" state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="15ffeb1a-46a9-49ff-ac2f-423e3dec75a3"
               name="Driver Input : Component suddenly stop" content="Some content"

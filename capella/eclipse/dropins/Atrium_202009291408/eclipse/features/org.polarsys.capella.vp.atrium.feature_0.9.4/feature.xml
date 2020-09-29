@@ -2,7 +2,7 @@
 <feature
       id="org.polarsys.capella.vp.atrium.feature"
       label="Atrium Feature"
-      version="0.9.3">
+      version="0.9.4">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -18,42 +18,42 @@
 
    <includes
          id="org.polarsys.capella.vp.atrium.representation.feature"
-         version="0.9.3"/>
+         version="0.9.4"/>
 
    <includes
          id="org.polarsys.capella.vp.atrium.rules.feature"
-         version="0.9.3"/>
+         version="0.9.4"/>
 
    <includes
          id="org.polarsys.capella.vp.atrium.af.feature"
-         version="0.9.3"/>
+         version="0.9.4"/>
 
    <plugin
          id="org.polarsys.capella.vp.atrium.vpdsl"
          download-size="0"
          install-size="0"
-         version="1.0.0.202009281020"
+         version="1.0.0.202009291408"
          unpack="false"/>
 
    <plugin
          id="org.polarsys.capella.vp.atrium.model.edit"
          download-size="0"
          install-size="0"
-         version="0.9.3"
+         version="0.9.4"
          unpack="false"/>
 
    <plugin
          id="org.polarsys.capella.vp.atrium.model"
          download-size="0"
          install-size="0"
-         version="0.9.3"
+         version="0.9.4"
          unpack="false"/>
 
    <plugin
          id="org.polarsys.capella.vp.atrium"
          download-size="0"
          install-size="0"
-         version="0.9.3"
+         version="0.9.4"
          unpack="false"/>
 
 </feature>

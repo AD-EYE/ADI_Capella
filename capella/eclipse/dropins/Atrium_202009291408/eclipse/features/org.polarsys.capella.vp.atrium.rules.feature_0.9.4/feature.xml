@@ -2,7 +2,7 @@
 <feature
       id="org.polarsys.capella.vp.atrium.rules.feature"
       label="%featureName"
-      version="0.9.3"
+      version="0.9.4"
       provider-name="%providerName">
 
    <description url="%descriptionURL">
@@ -21,35 +21,35 @@
          id="org.polarsys.capella.vp.atrium.rules.analysis"
          download-size="0"
          install-size="0"
-         version="0.9.3"
+         version="0.9.4"
          unpack="false"/>
 
    <plugin
          id="org.polarsys.capella.vp.atrium.rules.validation"
          download-size="0"
          install-size="0"
-         version="0.9.3"
+         version="0.9.4"
          unpack="false"/>
 
    <plugin
          id="org.polarsys.capella.vp.atrium.rules.transformation"
          download-size="0"
          install-size="0"
-         version="0.9.3"
+         version="0.9.4"
          unpack="false"/>
 
    <plugin
          id="org.polarsys.capella.vp.atrium.rules.generation"
          download-size="0"
          install-size="0"
-         version="0.9.3"
+         version="0.9.4"
          unpack="false"/>
 
    <plugin
          id="org.polarsys.capella.vp.atrium.rules.computation"
          download-size="0"
          install-size="0"
-         version="0.9.3"
+         version="0.9.4"
          unpack="false"/>
 
 </feature>
