@@ -2,7 +2,7 @@
 <feature
       id="org.polarsys.capella.vp.atrium.af.feature"
       label="%featureName"
-      version="0.9.7"
+      version="1.0.0"
       provider-name="%providerName">
 
    <description url="%descriptionURL">
@@ -21,7 +21,7 @@
          id="org.polarsys.capella.vp.atrium.af"
          download-size="0"
          install-size="0"
-         version="0.9.7"
+         version="1.0.0"
          unpack="false"/>
 
 </feature>
