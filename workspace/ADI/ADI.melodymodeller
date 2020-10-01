@@ -1461,7 +1461,7 @@
               responsibleExpert="" dateOfCompletion=""/>
           <ownedExtensions xsi:type="Atrium:Assumption" id="274c86f1-89ec-4b74-a563-48d75fea7e8c"
               name="Each component failure is independant" content="Other components are not more likely to fail after one failure in the system."
-              linkedWithCFAs="#a32dc845-4174-467b-a1c8-db8a8b12f7d9 #2c423eeb-3adf-4286-8a42-4a8b6bf4347d #b88f52c2-e765-429f-b2d0-65932fdcd302 #431f5ed4-cf04-4977-aff9-8cb84768cbe0 #19405f57-245f-414b-aa02-713cb6793bdf #b721849c-0652-402d-8ec1-a0879d54ac6b #15ffeb1a-46a9-49ff-ac2f-423e3dec75a3 #6dc6fef2-ad00-477b-97c9-438b374085c5 #be7dbc50-606b-438a-877e-33015a570651 #a20116e7-072f-4a4a-8b8a-b782c1230937 #3a0a480d-51cb-4c32-b0c0-3d8c7cc9bd93 #d1fd0bd8-5bf7-4ff6-be4d-9d23e891b0e1 #ab303c7c-fd90-441f-9364-ae923fdd4a43 #00a47eda-139a-48b6-9f5c-8fab510348de #11454d4a-3666-4420-9864-e4c3365e9731 #78ae5e8c-1e7d-4b2e-87f4-da536fe5807e #34fc5f29-2f44-4774-9a40-b713f065e763 #5193b66a-092e-49da-8415-95d23e719ac9 #098d6bd6-bbf9-4076-83c5-3cbf01cd5c52 #0d92b867-39ea-4b07-bb9d-2d85fa6b88e2 #16aaabf5-9a5c-4c2e-a24b-d7e0d098f9c1 #49cb0aad-fa4f-4d6b-bdb7-6701e2004a3f #ff414c05-3fdb-4cbc-8812-8a4c6f93a326 #e9f199b5-49f3-4757-b5a1-8b1230f2ea48 #1f197833-c390-4d42-a1ee-0d949ec69814 #33f62088-59da-4579-a2ec-fcf23b6cdf8b #a95adf62-bd04-43c6-b0a2-ae30e11720cb #5513076f-95ab-439f-98c8-0dd5785cb1a0 #3f651230-d686-4f5a-af0f-bc801d69f722 #c5cb2af6-c3a0-48da-815d-b08abb27ccac #4a0d2396-3e40-482d-a9f0-ca4843d74caa #905274ef-a524-4771-97cc-a4a857e246fe #1a060530-c140-405f-82e1-40ba7aef0851 #7c111ff1-0cb6-426d-b3a3-f5c7a03cbb08 #9189ddcb-30dd-4d10-9983-260cb997e175 #3e30ee08-cb43-4c12-a900-7de8c1092888 #3cd22f00-a1c6-4ed8-8f37-47a58c7075be #a2787e37-1a4c-4104-8fd7-d1bd003e9a08 #c37ae190-bffb-46a9-852f-c2d814507089 #477ead51-2518-4fb7-8a4e-cd68608cd132 #ee9e9f5d-9409-4f02-b304-a784a43424fc #b57edff0-d612-4b42-bc50-14245a780cf5 #418e7746-54b4-48ec-9671-e727afc861f7 #0b5df9b9-9e9c-4cf7-a7f9-35deed52c450 #55a4e708-4bab-43f0-a59a-4299007eed86 #558cf98a-b71d-4f96-a63d-0259a8d32cb5 #f54bb472-b210-4568-a52f-7ee5ff9c5598 #a9352224-6ce9-4c14-b986-5fe95cacbf05 #eaae4793-15f5-489e-9428-3ecb49c25d3e #217ba1d2-15e5-433a-8c65-f38986b45490 #d82921d8-6935-44d6-9560-0750b472cdb0 #f43c7d54-d49f-4b22-b52f-7c4646d12f01 #600a8af7-3cd9-4bae-8e99-8d5b8e9b5b02 #b6c18b8f-8fb4-48f4-87d9-52c5d4becdf8 #64cc9aca-620b-4af8-bd0f-2bed68332e54 #1e6ca891-e956-4d42-99c3-04f3ceb57d6a #00a38106-31df-472b-9792-20b8dd332afc #0d94c9e0-f754-4e78-a7a0-175f84721374 #0f3bdd0a-f604-4fa1-9243-7ca524296ab5 #f43e360a-65f5-4fe7-bedc-ee8f4efa22cb #94650bee-efe0-4b4f-ae82-b7a6a4be6a6f #a0fd3ef2-165a-46ae-8c35-eba10c8746f9 #c0aeda5a-b627-4dfb-8507-93fb18300e52 #093d8606-6cff-459c-bc24-876e86800a17 #15ef618e-9d94-4e85-91d6-1171dba09f84 #4706afeb-357d-4ae4-9f2f-7b361f15869e #5ea25c7e-00de-4cff-8179-f506ef3d9e30 #f8b3fa88-00f3-4137-932f-00802e9ebbcc #4eab58ac-c508-473d-b74a-dc5d60ad2975 #e97eeccf-0812-4eb0-8cdd-4042c77d90dd #e1a1de10-6387-4577-b2e0-e3435699728e #62ffaf69-5d3a-414f-8cec-2792aad2b9ce #286a9d0b-ea79-4c4a-a28a-8186bceebbd7 #2ebb7e6c-b0f7-456f-b7df-bd45ffa80ff1 #d299ccd9-cce9-4219-a72f-779dcedb4b7a #7f0aff09-2833-46dc-b0b1-32a08dd0ff68 #7f378f6f-6162-4caa-8da2-5dee313430fc #c409bd27-bede-4333-bfdf-26bffa306624 #70332cbb-fd46-4fe2-9b45-f7a15412ca30 #8e7a000f-9d96-44ba-b3f3-4cd24bb179ad #6c4ec7c3-bcd9-42db-a0d7-38a472f6049d #2805485a-14a2-4d0a-9db8-114f4ee9c50e #b1ba980a-e9eb-46d2-8b84-cb1c2cf6ae9c #40fbdb28-05e8-424e-a83f-dcf8c99cf533 #08d6596f-d814-4bea-a2ce-e919530a8be5 #a627f0d3-256c-41f7-a164-72f57e79eeb8 #6edc8aa1-10db-493e-9661-6796da058d79 #15d3732a-2e77-4f99-ad94-2c47767478e1 #b876ce19-9b0f-432c-b564-903b86a762ae #1614fe66-f768-4ad9-8339-e66eba8b35ed #2e12a2ab-daab-43a6-aa11-3a0159ffc291 #1f1c615f-d42d-49b1-bf74-0b9cc348aa0a #6d99b11d-df76-4dfa-b8ad-d94f20051381"
+              linkedWithCFAs="#a32dc845-4174-467b-a1c8-db8a8b12f7d9 #2c423eeb-3adf-4286-8a42-4a8b6bf4347d #b88f52c2-e765-429f-b2d0-65932fdcd302 #431f5ed4-cf04-4977-aff9-8cb84768cbe0 #19405f57-245f-414b-aa02-713cb6793bdf #b721849c-0652-402d-8ec1-a0879d54ac6b #15ffeb1a-46a9-49ff-ac2f-423e3dec75a3 #6dc6fef2-ad00-477b-97c9-438b374085c5 #be7dbc50-606b-438a-877e-33015a570651 #a20116e7-072f-4a4a-8b8a-b782c1230937 #3a0a480d-51cb-4c32-b0c0-3d8c7cc9bd93 #d1fd0bd8-5bf7-4ff6-be4d-9d23e891b0e1 #ab303c7c-fd90-441f-9364-ae923fdd4a43 #00a47eda-139a-48b6-9f5c-8fab510348de #11454d4a-3666-4420-9864-e4c3365e9731 #34fc5f29-2f44-4774-9a40-b713f065e763 #5193b66a-092e-49da-8415-95d23e719ac9 #098d6bd6-bbf9-4076-83c5-3cbf01cd5c52 #0d92b867-39ea-4b07-bb9d-2d85fa6b88e2 #16aaabf5-9a5c-4c2e-a24b-d7e0d098f9c1 #49cb0aad-fa4f-4d6b-bdb7-6701e2004a3f #ff414c05-3fdb-4cbc-8812-8a4c6f93a326 #e9f199b5-49f3-4757-b5a1-8b1230f2ea48 #1f197833-c390-4d42-a1ee-0d949ec69814 #33f62088-59da-4579-a2ec-fcf23b6cdf8b #a95adf62-bd04-43c6-b0a2-ae30e11720cb #5513076f-95ab-439f-98c8-0dd5785cb1a0 #3f651230-d686-4f5a-af0f-bc801d69f722 #c5cb2af6-c3a0-48da-815d-b08abb27ccac #4a0d2396-3e40-482d-a9f0-ca4843d74caa #905274ef-a524-4771-97cc-a4a857e246fe #1a060530-c140-405f-82e1-40ba7aef0851 #7c111ff1-0cb6-426d-b3a3-f5c7a03cbb08 #9189ddcb-30dd-4d10-9983-260cb997e175 #3e30ee08-cb43-4c12-a900-7de8c1092888 #3cd22f00-a1c6-4ed8-8f37-47a58c7075be #a2787e37-1a4c-4104-8fd7-d1bd003e9a08 #c37ae190-bffb-46a9-852f-c2d814507089 #477ead51-2518-4fb7-8a4e-cd68608cd132 #ee9e9f5d-9409-4f02-b304-a784a43424fc #b57edff0-d612-4b42-bc50-14245a780cf5 #418e7746-54b4-48ec-9671-e727afc861f7 #0b5df9b9-9e9c-4cf7-a7f9-35deed52c450 #55a4e708-4bab-43f0-a59a-4299007eed86 #558cf98a-b71d-4f96-a63d-0259a8d32cb5 #f54bb472-b210-4568-a52f-7ee5ff9c5598 #a9352224-6ce9-4c14-b986-5fe95cacbf05 #eaae4793-15f5-489e-9428-3ecb49c25d3e #217ba1d2-15e5-433a-8c65-f38986b45490 #d82921d8-6935-44d6-9560-0750b472cdb0 #f43c7d54-d49f-4b22-b52f-7c4646d12f01 #600a8af7-3cd9-4bae-8e99-8d5b8e9b5b02 #b6c18b8f-8fb4-48f4-87d9-52c5d4becdf8 #64cc9aca-620b-4af8-bd0f-2bed68332e54 #1e6ca891-e956-4d42-99c3-04f3ceb57d6a #0d94c9e0-f754-4e78-a7a0-175f84721374 #f43e360a-65f5-4fe7-bedc-ee8f4efa22cb #94650bee-efe0-4b4f-ae82-b7a6a4be6a6f #a0fd3ef2-165a-46ae-8c35-eba10c8746f9 #c0aeda5a-b627-4dfb-8507-93fb18300e52 #093d8606-6cff-459c-bc24-876e86800a17 #15ef618e-9d94-4e85-91d6-1171dba09f84 #4706afeb-357d-4ae4-9f2f-7b361f15869e #5ea25c7e-00de-4cff-8179-f506ef3d9e30 #f8b3fa88-00f3-4137-932f-00802e9ebbcc #4eab58ac-c508-473d-b74a-dc5d60ad2975 #e97eeccf-0812-4eb0-8cdd-4042c77d90dd #e1a1de10-6387-4577-b2e0-e3435699728e #62ffaf69-5d3a-414f-8cec-2792aad2b9ce #286a9d0b-ea79-4c4a-a28a-8186bceebbd7 #2ebb7e6c-b0f7-456f-b7df-bd45ffa80ff1 #d299ccd9-cce9-4219-a72f-779dcedb4b7a #7f0aff09-2833-46dc-b0b1-32a08dd0ff68 #7f378f6f-6162-4caa-8da2-5dee313430fc #c409bd27-bede-4333-bfdf-26bffa306624 #70332cbb-fd46-4fe2-9b45-f7a15412ca30 #8e7a000f-9d96-44ba-b3f3-4cd24bb179ad #6c4ec7c3-bcd9-42db-a0d7-38a472f6049d #2805485a-14a2-4d0a-9db8-114f4ee9c50e #b1ba980a-e9eb-46d2-8b84-cb1c2cf6ae9c #40fbdb28-05e8-424e-a83f-dcf8c99cf533 #08d6596f-d814-4bea-a2ce-e919530a8be5 #a627f0d3-256c-41f7-a164-72f57e79eeb8 #6edc8aa1-10db-493e-9661-6796da058d79 #15d3732a-2e77-4f99-ad94-2c47767478e1 #b876ce19-9b0f-432c-b564-903b86a762ae #1614fe66-f768-4ad9-8339-e66eba8b35ed #2e12a2ab-daab-43a6-aa11-3a0159ffc291 #1f1c615f-d42d-49b1-bf74-0b9cc348aa0a #6d99b11d-df76-4dfa-b8ad-d94f20051381"
               rationale="/" responsibleArchitect="" responsibleExpert="" dateOfCompletion=""/>
           <ownedExtensions xsi:type="Atrium:Assumption" id="0654ea6b-2e1b-4160-9c63-8ef062fec516"
               name="Without inputs, the sensors data converters go silent" content="If there is no data to convert, the converters are in standby and do not deliver any messages on the different topics to the ROS nodes."
@@ -1513,7 +1513,7 @@
           <ownedExtensions xsi:type="Atrium:Assumption" id="816d612f-c6c5-4940-9383-8c3ab810fac3"
               name="MABX is aware of the state of each wheels, regarding their steering, torque and braking features"
               content="As lomg as the sate is &quot;fully functionnal&quot;, the wheels behave as they are told"
-              linkedWithCFAs="#34fc5f29-2f44-4774-9a40-b713f065e763 #16aaabf5-9a5c-4c2e-a24b-d7e0d098f9c1 #1f197833-c390-4d42-a1ee-0d949ec69814 #33f62088-59da-4579-a2ec-fcf23b6cdf8b #a95adf62-bd04-43c6-b0a2-ae30e11720cb #5513076f-95ab-439f-98c8-0dd5785cb1a0 #3f651230-d686-4f5a-af0f-bc801d69f722"
+              linkedWithCFAs="#34fc5f29-2f44-4774-9a40-b713f065e763 #16aaabf5-9a5c-4c2e-a24b-d7e0d098f9c1 #1f197833-c390-4d42-a1ee-0d949ec69814 #33f62088-59da-4579-a2ec-fcf23b6cdf8b #a95adf62-bd04-43c6-b0a2-ae30e11720cb #5513076f-95ab-439f-98c8-0dd5785cb1a0 #3f651230-d686-4f5a-af0f-bc801d69f722 #217ba1d2-15e5-433a-8c65-f38986b45490 #d82921d8-6935-44d6-9560-0750b472cdb0 #f43c7d54-d49f-4b22-b52f-7c4646d12f01 #600a8af7-3cd9-4bae-8e99-8d5b8e9b5b02 #b6c18b8f-8fb4-48f4-87d9-52c5d4becdf8 #64cc9aca-620b-4af8-bd0f-2bed68332e54 #1e6ca891-e956-4d42-99c3-04f3ceb57d6a"
               rationale="/" responsibleArchitect="" responsibleExpert="" dateOfCompletion=""/>
           <ownedExtensions xsi:type="Atrium:Assumption" id="56a3e7d6-7fc1-4fe7-8033-6f93ab5ebce9"
               name="Braking as maximum capacity is safe on KTH campus while driving straight"
@@ -1521,12 +1521,12 @@
               linkedWithCFAs="#34fc5f29-2f44-4774-9a40-b713f065e763 #19405f57-245f-414b-aa02-713cb6793bdf #098d6bd6-bbf9-4076-83c5-3cbf01cd5c52 #49cb0aad-fa4f-4d6b-bdb7-6701e2004a3f #ff414c05-3fdb-4cbc-8812-8a4c6f93a326 #1f197833-c390-4d42-a1ee-0d949ec69814 #33f62088-59da-4579-a2ec-fcf23b6cdf8b #a95adf62-bd04-43c6-b0a2-ae30e11720cb #5513076f-95ab-439f-98c8-0dd5785cb1a0 #3f651230-d686-4f5a-af0f-bc801d69f722 #c37ae190-bffb-46a9-852f-c2d814507089"
               rationale="/" responsibleArchitect="" responsibleExpert="" dateOfCompletion=""/>
           <ownedExtensions xsi:type="Atrium:Assumption" id="1a211383-ee7b-40e0-92ce-f061a6e49dfa"
-              name="A part of the internal state sent to the safety channel is wether the nominal channel receive the preloaded data or not"
+              name="A part of the internal state sent to the safety channel is whether the nominal channel receive the preloaded data or not"
               content="That assume that the nominal channel is detecting that it doesnt receive any preloaded data and then inform the safety channel, or that the safety channel is checking by itself wether it is the case or not."
               linkedWithCFAs="#2c423eeb-3adf-4286-8a42-4a8b6bf4347d #477ead51-2518-4fb7-8a4e-cd68608cd132 #ee9e9f5d-9409-4f02-b304-a784a43424fc"
               rationale="/" responsibleArchitect="" responsibleExpert="" dateOfCompletion=""/>
           <ownedExtensions xsi:type="Atrium:Assumption" id="6b014e66-9212-46c7-af9f-eee27c3d9a8e"
-              name="A part of the internal state sent to the safety channel is wether the nominal channel is sending command to the control switch or not"
+              name="A part of the internal state sent to the safety channel is whether the nominal channel is sending command to the control switch or not"
               content="That assume that if the controlSwitch does not receive any nominal command, it is because the nominal channel is not sending it."
               linkedWithCFAs="#b88f52c2-e765-429f-b2d0-65932fdcd302" rationale="/"
               responsibleArchitect="" responsibleExpert="" dateOfCompletion=""/>
@@ -1560,6 +1560,15 @@
               content="That it to say that the button is constantly preventing the emergency signal from being sent to the system"
               linkedWithCFAs="#f54bb472-b210-4568-a52f-7ee5ff9c5598" rationale="/"
               responsibleArchitect="" responsibleExpert="" dateOfCompletion=""/>
+          <ownedExtensions xsi:type="Atrium:Assumption" id="60f6481b-d225-4716-9ef9-efa03230f78e"
+              name="If the component in charge of calculating the desired brake pump PWM stops, then the PWM is not outputed"
+              content="This could also means that the PWm is always in one state (0 or 1)"
+              rationale="/" responsibleArchitect="" responsibleExpert="" dateOfCompletion=""/>
+          <ownedExtensions xsi:type="Atrium:Assumption" id="5bc5f705-c7dd-4a5e-8009-eb3dfc5248dd"
+              name="MABX can perform an emergency brake with 3 working brakes only"
+              content="In case of a tire problem, a brake problem, a pump problem ... Another assumption is already assuming that MABX is aware of those problems."
+              linkedWithCFAs="#64cc9aca-620b-4af8-bd0f-2bed68332e54 #1e6ca891-e956-4d42-99c3-04f3ceb57d6a"
+              rationale="/" responsibleArchitect="" responsibleExpert="" dateOfCompletion=""/>
         </ownedExtensions>
         <ownedExtensions xsi:type="Atrium:DA_list" id="_1_XmcAFqEeuNHbAmLUt6JQ">
           <ownedExtensions xsi:type="Atrium:DA" id="2946f5d5-9a66-4cd8-a2f1-b3c7588bc3ce"
@@ -1602,7 +1611,7 @@
               name="The safety channel should trigger /switchCommand as long as the ControlSwitch does not receive the safe stop trajectory anymore"
               content="This can be done by listening to the control switch feedback (the trajectory repeated)"/>
           <ownedExtensions xsi:type="Atrium:DA" id="4909816a-c760-4f4b-aa85-026831b4ca3d"
-              name="The control switch should triggers /switchCommand as long as it does not receive any safe_stop_traj anymore and decompose the last one he received to sen d the required twists over time to RCVE"
+              name="The control switch should triggers /switchCommand as long as it does not receive any safe_stop_traj anymore and decompose the last one he received to send the required twists over time to RCVE"
               content="Thus if this is detected under 0.5 seconds it is still time to safe stop."/>
         </ownedExtensions>
         <ownedExtensions xsi:type="Atrium:DG_list" id="_1_YNgAFqEeuNHbAmLUt6JQ">
@@ -1646,8 +1655,7 @@
           <ownedExtensions xsi:type="Atrium:CFA" id="be7dbc50-606b-438a-877e-33015a570651"
               name="Control Switch feedback : Component suddenly stops" content="Skipped right now"
               linkedtoElement="#efb9bc05-cd15-4168-9eab-254ba37eb592" linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b"
-              assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c" state="Unprocessed"
-              NonApplicable="true"/>
+              assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c" state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="19405f57-245f-414b-aa02-713cb6793bdf"
               name="Selected command : Component suddenly stops" content="The controlSwitch suddenly stop to send command to the interface between RCVE and ADI."
               linkedtoElement="#0ab299c3-71c0-47d0-b8fd-6547bba889b6" linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b"
@@ -1708,11 +1716,6 @@
               assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c #155ae5e7-c1fa-4021-84bf-f0baa5d42b0b"
               goal="#ebf74c52-fba9-42f3-8496-80b3a70d9bd2" designAlternative="#7f0ab2ee-e1b0-46da-ab63-7204fb8f554f"
               state="Unprocessed"/>
-          <ownedExtensions xsi:type="Atrium:CFA" id="78ae5e8c-1e7d-4b2e-87f4-da536fe5807e"
-              name="Data stored in memory : Component suddenly stops" content="Some content"
-              linkedtoElement="#97a951bb-3d76-435e-889d-6eb49befa0b0" linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b"
-              assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c" state="Unprocessed"
-              NonApplicable="true"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="34fc5f29-2f44-4774-9a40-b713f065e763"
               name="Position control depending on QC value : Component suddenly stops"
               content="Some content" linkedtoElement="org.polarsys.capella.core.data.fa:ComponentExchange ../RCVE/RCVE.melodymodeller#a89407ae-a855-45ee-aed7-2c73979f2232"
@@ -1905,53 +1908,50 @@
           <ownedExtensions xsi:type="Atrium:CFA" id="217ba1d2-15e5-433a-8c65-f38986b45490"
               name="CAN Transmit : Component suddenly stops" content="Some content"
               linkedtoElement="org.polarsys.capella.core.data.la:LogicalFunction ../RCVE/RCVE.melodymodeller#fbe15a01-6dce-48d9-b7fd-37e2f705b00d"
-              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c"
+              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c #816d612f-c6c5-4940-9383-8c3ab810fac3"
+              goal="#b4607250-8e0b-4dd6-a0cd-cfdc3a6e46bd" designAlternative="#8d864ada-ac1b-4d22-846c-c521b661af34"
               state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="d82921d8-6935-44d6-9560-0750b472cdb0"
               name="CAN Receive : Component suddenly stops" content="Some content"
               linkedtoElement="org.polarsys.capella.core.data.la:LogicalFunction ../RCVE/RCVE.melodymodeller#13cf1edb-b20d-41e1-8390-2b9937402b17"
-              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c"
+              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c #816d612f-c6c5-4940-9383-8c3ab810fac3"
+              goal="#b4607250-8e0b-4dd6-a0cd-cfdc3a6e46bd" designAlternative="#8d864ada-ac1b-4d22-846c-c521b661af34"
               state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="f43c7d54-d49f-4b22-b52f-7c4646d12f01"
               name="Analog i/p : Component suddenly stops" content="Some content"
               linkedtoElement="org.polarsys.capella.core.data.la:LogicalFunction ../RCVE/RCVE.melodymodeller#c19f4175-897c-4d12-9ddf-39332fdbd80d"
-              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c"
+              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c #816d612f-c6c5-4940-9383-8c3ab810fac3"
+              goal="#b4607250-8e0b-4dd6-a0cd-cfdc3a6e46bd" designAlternative="#8d864ada-ac1b-4d22-846c-c521b661af34"
               state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="600a8af7-3cd9-4bae-8e99-8d5b8e9b5b02"
               name="Receives PWM signal to control the pump : Component suddenly stops"
               content="Some content" linkedtoElement="org.polarsys.capella.core.data.la:LogicalFunction ../RCVE/RCVE.melodymodeller#1cb55fed-7a77-49af-b62a-2ecdfa2bf5ac"
-              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c"
+              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c #816d612f-c6c5-4940-9383-8c3ab810fac3"
+              goal="#b4607250-8e0b-4dd6-a0cd-cfdc3a6e46bd" designAlternative="#8d864ada-ac1b-4d22-846c-c521b661af34"
               state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="b6c18b8f-8fb4-48f4-87d9-52c5d4becdf8"
               name="Output Voltage : Component suddenly stops" content="Some content"
               linkedtoElement="org.polarsys.capella.core.data.la:LogicalFunction ../RCVE/RCVE.melodymodeller#de9b585f-6292-4251-b19e-1a936f4ae2f3"
-              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c"
+              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c #816d612f-c6c5-4940-9383-8c3ab810fac3"
+              goal="#b4607250-8e0b-4dd6-a0cd-cfdc3a6e46bd" designAlternative="#8d864ada-ac1b-4d22-846c-c521b661af34"
               state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="64cc9aca-620b-4af8-bd0f-2bed68332e54"
               name="Calculate Desired Brake Pump PWM to match desired pressure value : Component suddenly stops"
               content="Some content" linkedtoElement="org.polarsys.capella.core.data.la:LogicalFunction ../RCVE/RCVE.melodymodeller#32daa5a8-fa90-4db2-ad7a-4616c4473417"
-              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c"
+              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c #816d612f-c6c5-4940-9383-8c3ab810fac3 #5bc5f705-c7dd-4a5e-8009-eb3dfc5248dd"
+              goal="#b4607250-8e0b-4dd6-a0cd-cfdc3a6e46bd" designAlternative="#8d864ada-ac1b-4d22-846c-c521b661af34"
               state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="1e6ca891-e956-4d42-99c3-04f3ceb57d6a"
               name="Current Pressure : Component suddenly stops" content="Some content"
               linkedtoElement="org.polarsys.capella.core.data.la:LogicalFunction ../RCVE/RCVE.melodymodeller#d36d74af-0afd-4c1b-a80d-4e1a3c0ed45a"
-              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c"
-              state="Unprocessed"/>
-          <ownedExtensions xsi:type="Atrium:CFA" id="00a38106-31df-472b-9792-20b8dd332afc"
-              name="Human/Remote : Component suddenly stops" content="Some content"
-              linkedtoElement="org.polarsys.capella.core.data.la:LogicalFunction ../RCVE/RCVE.melodymodeller#46f114ad-8069-4a3d-b386-55121ec712c5"
-              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c"
+              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c #816d612f-c6c5-4940-9383-8c3ab810fac3 #5bc5f705-c7dd-4a5e-8009-eb3dfc5248dd"
+              goal="#b4607250-8e0b-4dd6-a0cd-cfdc3a6e46bd" designAlternative="#8d864ada-ac1b-4d22-846c-c521b661af34"
               state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="0d94c9e0-f754-4e78-a7a0-175f84721374"
               name="Calculate Desired Motor Current for propulsion and regen braking : Component suddenly stops"
               content="Some content" linkedtoElement="org.polarsys.capella.core.data.la:LogicalFunction ../RCVE/RCVE.melodymodeller#7ff04a5c-ae27-4de3-8be5-88830946ece6"
               linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c"
-              state="Unprocessed"/>
-          <ownedExtensions xsi:type="Atrium:CFA" id="0f3bdd0a-f604-4fa1-9243-7ca524296ab5"
-              name="Steering Mode : Component suddenly stops" content="Some content"
-              linkedtoElement="org.polarsys.capella.core.data.la:LogicalFunction ../RCVE/RCVE.melodymodeller#b0dff32c-a324-4f20-be91-e6e5cd18fb01"
-              linkedtoFailure="#6d3ab06f-03d8-44bd-a2c0-cc592406698b" assumption="#274c86f1-89ec-4b74-a563-48d75fea7e8c"
-              state="Unprocessed"/>
+              goal="#b4607250-8e0b-4dd6-a0cd-cfdc3a6e46bd" state="Unprocessed"/>
           <ownedExtensions xsi:type="Atrium:CFA" id="f43e360a-65f5-4fe7-bedc-ee8f4efa22cb"
               name="Generates Ackermann Angles : Component suddenly stops" content="Some content"
               linkedtoElement="org.polarsys.capella.core.data.la:LogicalFunction ../RCVE/RCVE.melodymodeller#4bdadccc-873d-4867-9464-3a5aae52355e"
@@ -2398,8 +2398,12 @@
                 source="#cc4e7ef0-44a4-406a-9631-19b0bf40c250" target="#b88219dc-4421-4186-b11a-8307a4151af4"
                 kind="FLOW"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="97a951bb-3d76-435e-889d-6eb49befa0b0" name="Data stored in memory"
+                id="97a951bb-3d76-435e-889d-6eb49befa0b0" name="Nominal channel access to data in memory"
                 source="#d5230158-9331-473d-ad58-4890aaa3bead" target="#495088fb-514c-4afa-a538-05e73d89c7b0"
+                kind="FLOW"/>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="02551f61-36f8-4a6f-9f44-61ea86810cbb" name="Safety channel access to data in memory"
+                source="#8678f410-a60c-45a3-8d7f-f543d88703ab" target="#4486f2f3-8f80-44eb-a0ce-b28f05be16a1"
                 kind="FLOW"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="268beee8-bf16-4f31-8fb2-21d194709e93"
                 name="Nominal Channel" abstractType="#0b851f27-aef6-44a6-86c8-c81b2f6813e9"/>
@@ -2692,6 +2696,9 @@
                     id="e650c7e8-76ba-44f0-aea5-2f089d3082cc" targetElement="#e3ac1303-b6ea-4a2b-abf3-1e367b24733d"
                     sourceElement="#cc4e7ef0-44a4-406a-9631-19b0bf40c250"/>
               </ownedFeatures>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="4486f2f3-8f80-44eb-a0ce-b28f05be16a1" name="CP 7" orientation="IN"
+                  kind="FLOW"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="19fbde42-bce9-4caa-bd32-66719ca8d105" name="Control Switch">
@@ -3085,6 +3092,9 @@
                 id="c0e88148-9ac7-4f24-9349-e257d531057e" name="Memory">
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="d5230158-9331-473d-ad58-4890aaa3bead" name="CP 1" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="8678f410-a60c-45a3-8d7f-f543d88703ab" name="CP 2" orientation="OUT"
                   kind="FLOW"/>
             </ownedLogicalComponents>
           </ownedLogicalComponents>
