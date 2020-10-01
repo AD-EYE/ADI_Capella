@@ -1560,8 +1560,12 @@
                 source="#cc4e7ef0-44a4-406a-9631-19b0bf40c250" target="#b88219dc-4421-4186-b11a-8307a4151af4"
                 kind="FLOW"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="97a951bb-3d76-435e-889d-6eb49befa0b0" name="Data stored in memory"
+                id="97a951bb-3d76-435e-889d-6eb49befa0b0" name="Nominal channel access to data in memory"
                 source="#d5230158-9331-473d-ad58-4890aaa3bead" target="#495088fb-514c-4afa-a538-05e73d89c7b0"
+                kind="FLOW"/>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="02551f61-36f8-4a6f-9f44-61ea86810cbb" name="Safety channel access to data in memory"
+                source="#8678f410-a60c-45a3-8d7f-f543d88703ab" target="#4486f2f3-8f80-44eb-a0ce-b28f05be16a1"
                 kind="FLOW"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="268beee8-bf16-4f31-8fb2-21d194709e93"
                 name="Nominal Channel" abstractType="#0b851f27-aef6-44a6-86c8-c81b2f6813e9"/>
@@ -1854,6 +1858,9 @@
                     id="e650c7e8-76ba-44f0-aea5-2f089d3082cc" targetElement="#e3ac1303-b6ea-4a2b-abf3-1e367b24733d"
                     sourceElement="#cc4e7ef0-44a4-406a-9631-19b0bf40c250"/>
               </ownedFeatures>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="4486f2f3-8f80-44eb-a0ce-b28f05be16a1" name="CP 7" orientation="IN"
+                  kind="FLOW"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="19fbde42-bce9-4caa-bd32-66719ca8d105" name="Control Switch">
@@ -2247,6 +2254,9 @@
                 id="c0e88148-9ac7-4f24-9349-e257d531057e" name="Memory">
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="d5230158-9331-473d-ad58-4890aaa3bead" name="CP 1" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="8678f410-a60c-45a3-8d7f-f543d88703ab" name="CP 2" orientation="OUT"
                   kind="FLOW"/>
             </ownedLogicalComponents>
           </ownedLogicalComponents>
