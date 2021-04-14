@@ -208,8 +208,6 @@
                 id="20cba520-761c-4a49-89cb-667d8621b3f3" name="FIP 3"/>
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="30b73c3d-8b8b-41c5-9ea7-09bd36535bb7" name="FIP 4"/>
-            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                id="03e16345-c1f9-4ba9-aca3-a6c89a96edaa" name="FIP 5"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="2807a31b-775e-4960-bd9f-8649ffbdddc5" name="FOP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
@@ -778,7 +776,7 @@
             <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
                 id="2129bb82-7153-4a19-a949-c83c4d4a5793" name="FIP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                id="17280058-f9d2-48dc-a8d6-4c93b6340033" name="FOP 1"/>
+                id="3d59c5f9-5bba-4bcd-b2b8-efc1cfedd371" name="FOP 1"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="0812f10f-6517-4550-8bb6-99a3a84ed197" name="Enter coordinates">
@@ -982,6 +980,8 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="85acc1cd-87ab-4538-b2bb-49ccf459c013" name="DECISION MAKING">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="b76fc247-940a-4141-9731-4fa81a24ddb7" name="FIP 1"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
                 id="d35bcdb4-649f-4c03-aa47-431f8bc1467a" name="/SafetySupervisor">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -1236,9 +1236,6 @@
               id="f2379041-699f-46c7-8eaf-9ce9cbe78c91" name="Request immediate safe stop"
               target="#2129bb82-7153-4a19-a949-c83c4d4a5793" source="#f1b11eea-0420-4a0a-bdc3-d9d8a1d62286"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="b2be1e99-dcc0-41a2-978b-4f15121500e0" name="/switchCommand" target="#03e16345-c1f9-4ba9-aca3-a6c89a96edaa"
-              source="#17280058-f9d2-48dc-a8d6-4c93b6340033"/>
-          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="66ee6b15-24dc-4fde-96a1-467342a295d2" name="Instructions" target="#34e91124-79c0-45e2-908b-8cba3ed1153e"
               source="#3ac04e8a-97e9-4125-94fb-eb42f289189d"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
@@ -1362,6 +1359,9 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="a80d627a-16cb-4e18-85ee-4cc3f0b11f12" name="TwistS data" target="org.polarsys.capella.core.data.fa:FunctionInputPort ../RCVE/RCVE.melodymodeller#e10b19cd-1956-4c37-b8bd-1e5c9cf3e90b"
               source="#251088c0-878c-4b8f-9068-8ebedd01613b"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="76a0ccc3-452b-4932-a1e0-80966f0b1a1f" name="/safety_channel/switch_request"
+              target="#b76fc247-940a-4141-9731-4fa81a24ddb7" source="#3d59c5f9-5bba-4bcd-b2b8-efc1cfedd371"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
@@ -2802,6 +2802,9 @@
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="4486f2f3-8f80-44eb-a0ce-b28f05be16a1" name="CP 7" orientation="IN"
                   kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="a540537a-a9ff-4a97-967c-9d589def0657" name="CP 8" orientation="IN"
+                  kind="FLOW"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="19fbde42-bce9-4caa-bd32-66719ca8d105" name="Control Switch">
@@ -2838,11 +2841,7 @@
               </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="94f27d46-1e16-444b-b9c9-d7a7899c69cb" name="CP 5" orientation="IN"
-                  kind="FLOW">
-                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                    id="cd565fb2-f0e0-4b9e-94e0-1320860608e7" targetElement="#03e16345-c1f9-4ba9-aca3-a6c89a96edaa"
-                    sourceElement="#94f27d46-1e16-444b-b9c9-d7a7899c69cb"/>
-              </ownedFeatures>
+                  kind="FLOW"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="b88219dc-4421-4186-b11a-8307a4151af4" name="CP 6" orientation="IN"
                   kind="FLOW">
@@ -3004,6 +3003,9 @@
                     id="333910c9-4cc8-416f-b200-16b8372ce71f" targetElement="#34e91124-79c0-45e2-908b-8cba3ed1153e"
                     sourceElement="#ac16cb6e-593b-44f3-a03d-4c4217905737"/>
               </ownedFeatures>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="a263bba1-96ac-4f1b-8ef3-fc19c11c598f" name="CP 2" orientation="OUT"
+                  kind="FLOW"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="53a3f87e-3d84-4a83-bc60-e16d558924e5" name="Network Switch PEX8724">
@@ -3700,11 +3702,7 @@
               </ownedFeatures>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                   id="032e0746-8a9c-45e0-829b-ecf35dfd044a" name="CP 2" orientation="OUT"
-                  kind="FLOW">
-                <ownedPortAllocations xsi:type="org.polarsys.capella.core.data.information:PortAllocation"
-                    id="73cf3a2a-9add-41f9-8380-42d0c5249ec5" targetElement="#17280058-f9d2-48dc-a8d6-4c93b6340033"
-                    sourceElement="#032e0746-8a9c-45e0-829b-ecf35dfd044a"/>
-              </ownedFeatures>
+                  kind="FLOW"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                 id="00acf85c-fc4a-4599-b62d-5a4248d1a739" name="GPS interface">
