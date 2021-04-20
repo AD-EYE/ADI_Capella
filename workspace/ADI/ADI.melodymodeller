@@ -212,6 +212,8 @@
                 id="2807a31b-775e-4960-bd9f-8649ffbdddc5" name="FOP 1"/>
             <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                 id="36f3b5fd-b187-4dfb-a1a0-77ea486e72e0" name="FOP 2"/>
+            <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                id="3d3cb986-909d-46ab-a9bd-43ea5e04c162" name="FOP 3"/>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="c1736567-fbfa-4f18-873a-c184ded4c493" name="Send TwistS data to RCVE part">
@@ -483,6 +485,8 @@
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="0e5b67b7-d8da-4dc2-aa92-90fb80f8d9ff" name="LOCAL PLANNER">
+            <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                id="b2bde6aa-3926-4dcc-a1b2-a309b2b2b03d" name="FIP 1"/>
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
                 id="be57c3c1-f7e1-408e-a759-b867bed283b0" name="/op_trajectory_generator">
               <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
@@ -1188,19 +1192,19 @@
               id="db477ceb-47ae-4e08-8e3a-76cfef66e859" name="/gnss_pose" target="#da63486b-cbf5-41d7-a3a5-2e416f80db5e"
               source="#a4eb975d-cb03-4187-ba0d-d826b5f27fbf"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="69b68a87-3ace-4954-89de-bf8796091cc9" name="/adeye/overwriteGoal"
+              id="69b68a87-3ace-4954-89de-bf8796091cc9" name="/adeye/overwrite_goal"
               target="#427e1304-fc88-4c03-bb23-322c80032d84" source="#49672663-b040-43b2-b6ba-41da12091779"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="5c34d981-9522-42a5-a307-3bceb3446bdf" name="/adeye/updateGlobalPlanner"
+              id="5c34d981-9522-42a5-a307-3bceb3446bdf" name="/adeye/update_global_planner"
               target="#4d1aa92c-c289-44b6-9c9f-43e0daf99c58" source="#73e8f66e-9432-4286-a8d3-cd6383d6b822"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="084cfb2e-ba5b-49c2-917c-109a9958ddfe" name="/adeye/overwriteBehavior"
+              id="084cfb2e-ba5b-49c2-917c-109a9958ddfe" name="/adeye/overwrite_behavior"
               target="#b78966eb-5d42-4caa-9b19-16fa8d4def33" source="#be03fb73-e664-43ca-8c7d-a39a46827fc4"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="aef98ebb-e2e8-428f-b8dd-417bb0303435" name="/adeye/limitMaxSpeed"
+              id="aef98ebb-e2e8-428f-b8dd-417bb0303435" name="/adeye/limit_max_speed"
               target="#4f7156d7-06ed-440d-b75c-329e5eb24b63" source="#02dc365a-b1ab-4d1a-a737-4ff2863c0de0"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="97de53b8-be03-47be-b87d-62d9e936d23f" name="/adeye/overwriteTrajectoryEval"
+              id="97de53b8-be03-47be-b87d-62d9e936d23f" name="/adeye/overwrite_trajectory_eval"
               target="#641c1a60-7ed7-474c-8929-0f94b60ce407" source="#e8bd71bd-41ca-46b1-a3ff-60f682e13c6a"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="d14a1c63-9f41-4d7d-8b1b-ff81bb63332b" name="/adeye/updateLocalPlanner"
@@ -1212,7 +1216,7 @@
               id="78c21c8b-e1cd-47b4-8af2-c935166e16f3" name="/adeye/updateLocalPlanner"
               target="#1e15e5d5-0700-448f-8504-32262bcb7d90" source="#f7dff310-211f-4ff8-b8e3-67ca50e955aa"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
-              id="0cec438f-335a-4e1e-b865-1744543a9e1f" name="/adeye/updateLocalPlanner"
+              id="0cec438f-335a-4e1e-b865-1744543a9e1f" name="/adeye/update_local_planner"
               target="#ed0f1125-4cd3-44df-8f13-f236edb2a120" source="#f7dff310-211f-4ff8-b8e3-67ca50e955aa"/>
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="8c689ecb-e6ba-48a9-8cc7-7a8fc6a182df" name="/lane_waypoints_array"
@@ -1362,6 +1366,9 @@
           <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
               id="76a0ccc3-452b-4932-a1e0-80966f0b1a1f" name="/safety_channel/switch_request"
               target="#b76fc247-940a-4141-9731-4fa81a24ddb7" source="#3d59c5f9-5bba-4bcd-b2b8-efc1cfedd371"/>
+          <ownedFunctionalExchanges xsi:type="org.polarsys.capella.core.data.fa:FunctionalExchange"
+              id="769275ec-f703-48d2-afd1-e1688aa30c3c" name="/adeye/local_planner_replan"
+              target="#b2bde6aa-3926-4dcc-a1b2-a309b2b2b03d" source="#3d3cb986-909d-46ab-a9bd-43ea5e04c162"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
